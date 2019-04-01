@@ -12,7 +12,9 @@ import Hero
 class FeatureViewController: UIViewController {
     
     var feature: Feature?
+    var featureNumber: Int?
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -52,7 +54,7 @@ class FeatureViewController: UIViewController {
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Save", style: .default, handler: { (action: UIAlertAction) in
-            //pass
+            //save image to photo library
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
@@ -81,4 +83,57 @@ extension FeatureViewController: UIImagePickerControllerDelegate, UINavigationCo
     }
     
 }
+
+extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    //MARK: collection view setup
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        var count: Int!
+        switch featureNumber {
+        case 0:
+            count = Style.styles.count
+        case 1:
+            count = Style.portraits.count
+        case 2:
+            count = Style.domains.count
+        default:
+            count = 0 //test
+        }
+        return count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as? StyleCell)!
+        switch featureNumber {
+        case 0:
+            cell.style = Style.styles[indexPath.item]
+        case 1:
+            cell.style = Style.portraits[indexPath.item]
+        case 2:
+            cell.style = Style.domains[indexPath.item]
+        default:
+            cell.style = nil //test
+            print("style error")
+        }
+    
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.item {
+        case 0:
+            print("1") //test
+        case 1:
+            print("2") //test
+        case 2:
+            print("3") //test
+        case 3:
+            print("4") //test
+        default:
+            print("error") //test
+        }
+    }
+    
+}
+
 

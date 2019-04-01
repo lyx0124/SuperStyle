@@ -21,6 +21,7 @@ class SectionCell: UICollectionViewCell {
             guard let section = section else { return }
             let name = section.name
             
+            hero.id = "\(name)"
             nameLabel.text = name
             nameLabel.hero.id = "\(name)_name"
             nameLabel.hero.modifiers = [.zPosition(4)]

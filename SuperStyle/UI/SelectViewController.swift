@@ -11,6 +11,7 @@ import UIKit
 class SelectViewController: UIViewController {
     
     var features = Feature.features
+    var featureNumber: Int?
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -18,6 +19,7 @@ class SelectViewController: UIViewController {
         if let currentCell = sender as? FeatureCell,
             let vc = segue.destination as? FeatureViewController {
             vc.feature = currentCell.feature
+            vc.featureNumber = featureNumber
         }
     }
     
@@ -34,6 +36,10 @@ extension SelectViewController: UICollectionViewDataSource, UICollectionViewDele
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "item", for: indexPath) as? FeatureCell)!
         cell.feature = features[indexPath.item]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        featureNumber = indexPath.item
     }
     
 }

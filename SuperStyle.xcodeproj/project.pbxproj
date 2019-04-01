@@ -20,6 +20,8 @@
 		F68D31002251F6D6002700C8 /* CandyModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F68D30FD2251F6D6002700C8 /* CandyModel.mlmodel */; };
 		F68D31012251F6D6002700C8 /* UdnieModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F68D30FE2251F6D6002700C8 /* UdnieModel.mlmodel */; };
 		F68D31022251F6D6002700C8 /* RainPrincessModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F68D30FF2251F6D6002700C8 /* RainPrincessModel.mlmodel */; };
+		F68D31042251FC5C002700C8 /* StyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D31032251FC5C002700C8 /* StyleCell.swift */; };
+		F68D310622520271002700C8 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D310522520271002700C8 /* Style.swift */; };
 		F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA3DD3224202760035C326 /* MenuViewController.swift */; };
 		F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E02248A483001DC8D1 /* IntroViewController.swift */; };
 		F6EA78E32248AE2F001DC8D1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E22248AE2F001DC8D1 /* Section.swift */; };
@@ -45,6 +47,8 @@
 		F68D30FD2251F6D6002700C8 /* CandyModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CandyModel.mlmodel; sourceTree = "<group>"; };
 		F68D30FE2251F6D6002700C8 /* UdnieModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = UdnieModel.mlmodel; sourceTree = "<group>"; };
 		F68D30FF2251F6D6002700C8 /* RainPrincessModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RainPrincessModel.mlmodel; sourceTree = "<group>"; };
+		F68D31032251FC5C002700C8 /* StyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCell.swift; sourceTree = "<group>"; };
+		F68D310522520271002700C8 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		F6DA3DD3224202760035C326 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F6EA78E02248A483001DC8D1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F6EA78E22248AE2F001DC8D1 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -107,7 +111,6 @@
 				F6451423223F30AF006230DA /* Main.storyboard */,
 				F6451428223F30B0006230DA /* LaunchScreen.storyboard */,
 				F68D30F62251F4F8002700C8 /* Model */,
-				F68D30F52251F4E5002700C8 /* Core */,
 				F68D30F42251F4DA002700C8 /* UI */,
 			);
 			path = SuperStyle;
@@ -121,6 +124,8 @@
 				F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */,
 				F687A6E2224A3E9C00E98824 /* Feature.swift */,
 				F687A6E4224A3EA400E98824 /* FeatureCell.swift */,
+				F68D310522520271002700C8 /* Style.swift */,
+				F68D31032251FC5C002700C8 /* StyleCell.swift */,
 				F6451421223F30AF006230DA /* SuperStyleViewController.swift */,
 				F6DA3DD3224202760035C326 /* MenuViewController.swift */,
 				F6EA78E02248A483001DC8D1 /* IntroViewController.swift */,
@@ -128,13 +133,6 @@
 				F687A6E0224A3D0800E98824 /* FeatureViewController.swift */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		F68D30F52251F4E5002700C8 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		F68D30F62251F4F8002700C8 /* Model */ = {
@@ -275,6 +273,7 @@
 				F6EA78E52248AE3F001DC8D1 /* SectionCell.swift in Sources */,
 				F68D30FC2251F6B1002700C8 /* MosaicModel.mlmodel in Sources */,
 				F687A6E1224A3D0800E98824 /* FeatureViewController.swift in Sources */,
+				F68D310622520271002700C8 /* Style.swift in Sources */,
 				F61F3D51224A003300B4B5A2 /* SelectViewController.swift in Sources */,
 				F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */,
 				F68D31012251F6D6002700C8 /* UdnieModel.mlmodel in Sources */,
@@ -282,6 +281,7 @@
 				F6451420223F30AF006230DA /* AppDelegate.swift in Sources */,
 				F687A6E5224A3EA400E98824 /* FeatureCell.swift in Sources */,
 				F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */,
+				F68D31042251FC5C002700C8 /* StyleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

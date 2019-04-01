@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -477,64 +477,96 @@
                                     <action selector="pickImage:" destination="Iid-xn-gUK" eventType="touchUpInside" id="vwa-wD-nG3"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fVm-tu-1oK">
-                                <rect key="frame" x="0.0" y="586.5" width="414" height="275.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="w0n-pa-jC7">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88p-sg-1SS">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="138"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGI-hf-B3v">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="138"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="F5r-0f-IH8">
-                                        <rect key="frame" x="0.0" y="138" width="414" height="137.5"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTD-0O-nuV">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="137.5"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEr-eI-dWO">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="137.5"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHY-dC-yrw">
                                 <rect key="frame" x="0.0" y="173.5" width="414" height="413"/>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="weA-7r-hdI">
+                                <rect key="frame" x="0.0" y="586.5" width="414" height="275.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wcx-Yd-Blc">
+                                    <size key="itemSize" width="180" height="276"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="dFd-RH-sGu" customClass="StyleCell" customModule="SuperStyle" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-0.5" width="180" height="276"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="276"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vNT-5W-5si">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="276"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qm-xn-pBm">
+                                                    <rect key="frame" x="20" y="235" width="82" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6h-FB-1qb">
+                                                    <rect key="frame" x="20" y="202" width="117" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="I6h-FB-1qb" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" constant="20" id="9c3-hh-yF4"/>
+                                            <constraint firstAttribute="bottom" secondItem="8qm-xn-pBm" secondAttribute="bottom" constant="26" id="EAZ-k2-jq5"/>
+                                            <constraint firstAttribute="trailing" secondItem="vNT-5W-5si" secondAttribute="trailing" id="HUd-AI-hal"/>
+                                            <constraint firstItem="8qm-xn-pBm" firstAttribute="top" secondItem="I6h-FB-1qb" secondAttribute="bottom" constant="9" id="M99-Cn-Xax"/>
+                                            <constraint firstItem="8qm-xn-pBm" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" constant="20" id="X8a-2c-YfE"/>
+                                            <constraint firstAttribute="bottom" secondItem="vNT-5W-5si" secondAttribute="bottom" id="baF-jn-ueX"/>
+                                            <constraint firstAttribute="trailing" secondItem="8qm-xn-pBm" secondAttribute="trailing" constant="78" id="dE8-y7-IQv"/>
+                                            <constraint firstItem="vNT-5W-5si" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" id="hRO-Qj-Pmi"/>
+                                            <constraint firstItem="vNT-5W-5si" firstAttribute="top" secondItem="dFd-RH-sGu" secondAttribute="top" id="m6R-nZ-tjv"/>
+                                            <constraint firstAttribute="trailing" secondItem="I6h-FB-1qb" secondAttribute="trailing" constant="43" id="ol8-7k-hbu"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="8qm-xn-pBm" id="edR-Jx-tUm"/>
+                                            <outlet property="imageView" destination="vNT-5W-5si" id="SEd-eS-93W"/>
+                                            <outlet property="nameLabel" destination="I6h-FB-1qb" id="9Np-eS-40q"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Iid-xn-gUK" id="KQ2-Qn-Vvt"/>
+                                    <outlet property="delegate" destination="Iid-xn-gUK" id="qrg-E0-jnn"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PUO-K8-PqD" firstAttribute="leading" secondItem="4Ro-i8-91m" secondAttribute="trailing" constant="62" id="1ys-f4-6bp"/>
+                            <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="weA-7r-hdI" secondAttribute="trailing" id="29h-UO-zIK"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="PUO-K8-PqD" secondAttribute="trailing" constant="20" id="8Cb-cO-u16"/>
+                            <constraint firstItem="weA-7r-hdI" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="Dr3-zm-0Ip"/>
                             <constraint firstItem="bU7-Ze-HgL" firstAttribute="top" secondItem="JvO-Ee-bBy" secondAttribute="top" constant="8" id="EAj-Ar-uC5"/>
-                            <constraint firstItem="fVm-tu-1oK" firstAttribute="top" secondItem="fHY-dC-yrw" secondAttribute="bottom" id="Fne-Q1-zsQ"/>
-                            <constraint firstItem="fHY-dC-yrw" firstAttribute="height" secondItem="fVm-tu-1oK" secondAttribute="height" multiplier="1.5" id="Hgq-rW-H9F"/>
                             <constraint firstItem="48W-AT-IG0" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="Msp-Rw-9mU"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="fHY-dC-yrw" secondAttribute="trailing" id="NTe-rD-6be"/>
                             <constraint firstItem="gzD-xk-RhA" firstAttribute="top" secondItem="4Ro-i8-91m" secondAttribute="bottom" constant="8" id="P3i-iQ-Ptw"/>
                             <constraint firstItem="fHY-dC-yrw" firstAttribute="top" secondItem="gzD-xk-RhA" secondAttribute="bottom" constant="50" id="RAL-PE-Lz7"/>
-                            <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="fVm-tu-1oK" secondAttribute="trailing" id="RC5-sc-YVz"/>
                             <constraint firstItem="4Ro-i8-91m" firstAttribute="top" secondItem="JvO-Ee-bBy" secondAttribute="top" constant="14" id="S1I-sO-UUo"/>
                             <constraint firstItem="gzD-xk-RhA" firstAttribute="centerX" secondItem="JvO-Ee-bBy" secondAttribute="centerX" id="TnG-ul-NSl"/>
                             <constraint firstItem="4Ro-i8-91m" firstAttribute="centerX" secondItem="JvO-Ee-bBy" secondAttribute="centerX" id="YbG-oW-gDJ"/>
+                            <constraint firstItem="fHY-dC-yrw" firstAttribute="height" secondItem="weA-7r-hdI" secondAttribute="height" multiplier="1.5" id="Z8T-vI-FQ1"/>
                             <constraint firstItem="fHY-dC-yrw" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="ZXr-nA-4uC"/>
                             <constraint firstItem="bU7-Ze-HgL" firstAttribute="leading" secondItem="kGk-Yx-3S1" secondAttribute="leadingMargin" constant="-12" id="bgv-B6-2Kw"/>
+                            <constraint firstItem="JvO-Ee-bBy" firstAttribute="bottom" secondItem="weA-7r-hdI" secondAttribute="bottom" id="dRW-PH-Jn3"/>
                             <constraint firstItem="48W-AT-IG0" firstAttribute="bottom" secondItem="JvO-Ee-bBy" secondAttribute="bottom" constant="34" id="hQv-Et-LJj"/>
                             <constraint firstItem="gzD-xk-RhA" firstAttribute="top" secondItem="PUO-K8-PqD" secondAttribute="bottom" constant="11" id="ib1-ce-Z9K"/>
-                            <constraint firstItem="fVm-tu-1oK" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="ppV-u3-v8C"/>
                             <constraint firstItem="PUO-K8-PqD" firstAttribute="top" secondItem="JvO-Ee-bBy" secondAttribute="top" constant="16" id="s0L-37-YTT"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="top" secondItem="48W-AT-IG0" secondAttribute="top" constant="44" id="ty0-d6-Z61"/>
-                            <constraint firstItem="fVm-tu-1oK" firstAttribute="bottom" secondItem="JvO-Ee-bBy" secondAttribute="bottom" id="x1p-uR-5Ck"/>
+                            <constraint firstItem="weA-7r-hdI" firstAttribute="top" secondItem="fHY-dC-yrw" secondAttribute="bottom" id="uR5-dA-hcm"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="48W-AT-IG0" secondAttribute="trailing" id="zPG-8D-8ZT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JvO-Ee-bBy"/>
@@ -543,6 +575,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="collectionView" destination="weA-7r-hdI" id="0Ul-9Z-cVF"/>
                         <outlet property="descriptionLabel" destination="gzD-xk-RhA" id="m6A-S2-51j"/>
                         <outlet property="imageView" destination="48W-AT-IG0" id="5HV-us-A5J"/>
                         <outlet property="nameLabel" destination="4Ro-i8-91m" id="er5-ZO-mfu"/>
@@ -555,9 +588,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SSVC" width="276.48001098632812" height="491.51998901367188"/>
-        <image name="SSVCR" width="491.51998901367188" height="276.48001098632812"/>
-        <image name="SVC" width="276.48001098632812" height="491.51998901367188"/>
+        <image name="SSVC" width="576" height="1024"/>
+        <image name="SSVCR" width="1024" height="576"/>
+        <image name="SVC" width="576" height="1024"/>
         <image name="camera" width="32" height="32"/>
         <image name="go" width="50" height="50"/>
         <image name="more" width="50" height="50"/>
