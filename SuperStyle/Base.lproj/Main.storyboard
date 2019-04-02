@@ -317,7 +317,7 @@
                                             <outlet property="descriptionLabel" destination="7DG-ZC-Vrg" id="6rQ-iG-MUy"/>
                                             <outlet property="imageView" destination="N5V-p9-2fx" id="2LV-QP-lCH"/>
                                             <outlet property="nameLabel" destination="cb3-dq-hAX" id="spf-1c-Qy2"/>
-                                            <segue destination="Iid-xn-gUK" kind="presentation" id="X9k-cA-uac">
+                                            <segue destination="Iid-xn-gUK" kind="presentation" identifier="" id="X9k-cA-uac">
                                                 <segue key="commit" inheritsFrom="parent" id="ybu-pd-gjR"/>
                                                 <segue key="preview" inheritsFrom="commit" id="cHG-wN-1fE"/>
                                             </segue>
@@ -484,52 +484,52 @@
                                 <rect key="frame" x="0.0" y="586.5" width="414" height="275.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wcx-Yd-Blc">
-                                    <size key="itemSize" width="180" height="276"/>
+                                    <size key="itemSize" width="180" height="227.5"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="24" minY="24" maxX="24" maxY="24"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="dFd-RH-sGu" customClass="StyleCell" customModule="SuperStyle" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-0.5" width="180" height="276"/>
+                                        <rect key="frame" x="24" y="24" width="180" height="227.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="180" height="276"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="227.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vNT-5W-5si">
-                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="276"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="227.5"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <integer key="value" value="4"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qm-xn-pBm">
-                                                    <rect key="frame" x="20" y="235" width="82" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6h-FB-1qb">
+                                                    <rect key="frame" x="20" y="160" width="140" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6h-FB-1qb">
-                                                    <rect key="frame" x="20" y="202" width="117" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qm-xn-pBm">
+                                                    <rect key="frame" x="20" y="192" width="140" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="I6h-FB-1qb" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" constant="20" id="9c3-hh-yF4"/>
-                                            <constraint firstAttribute="bottom" secondItem="8qm-xn-pBm" secondAttribute="bottom" constant="26" id="EAZ-k2-jq5"/>
-                                            <constraint firstAttribute="trailing" secondItem="vNT-5W-5si" secondAttribute="trailing" id="HUd-AI-hal"/>
-                                            <constraint firstItem="8qm-xn-pBm" firstAttribute="top" secondItem="I6h-FB-1qb" secondAttribute="bottom" constant="9" id="M99-Cn-Xax"/>
-                                            <constraint firstItem="8qm-xn-pBm" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" constant="20" id="X8a-2c-YfE"/>
-                                            <constraint firstAttribute="bottom" secondItem="vNT-5W-5si" secondAttribute="bottom" id="baF-jn-ueX"/>
-                                            <constraint firstAttribute="trailing" secondItem="8qm-xn-pBm" secondAttribute="trailing" constant="78" id="dE8-y7-IQv"/>
-                                            <constraint firstItem="vNT-5W-5si" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" id="hRO-Qj-Pmi"/>
-                                            <constraint firstItem="vNT-5W-5si" firstAttribute="top" secondItem="dFd-RH-sGu" secondAttribute="top" id="m6R-nZ-tjv"/>
-                                            <constraint firstAttribute="trailing" secondItem="I6h-FB-1qb" secondAttribute="trailing" constant="43" id="ol8-7k-hbu"/>
+                                            <constraint firstItem="8qm-xn-pBm" firstAttribute="top" secondItem="I6h-FB-1qb" secondAttribute="bottom" constant="8" id="BfT-M1-hBq"/>
+                                            <constraint firstAttribute="trailing" secondItem="8qm-xn-pBm" secondAttribute="trailing" constant="20" id="GEo-nP-fdw"/>
+                                            <constraint firstItem="8qm-xn-pBm" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" constant="20" id="SwO-Kg-B7d"/>
+                                            <constraint firstItem="I6h-FB-1qb" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" constant="20" id="gfO-aI-2pM"/>
+                                            <constraint firstAttribute="bottom" secondItem="vNT-5W-5si" secondAttribute="bottom" id="qT4-Wv-o6j"/>
+                                            <constraint firstItem="vNT-5W-5si" firstAttribute="leading" secondItem="dFd-RH-sGu" secondAttribute="leading" id="suw-wf-eL0"/>
+                                            <constraint firstAttribute="trailing" secondItem="vNT-5W-5si" secondAttribute="trailing" id="uec-6R-bey"/>
+                                            <constraint firstItem="vNT-5W-5si" firstAttribute="top" secondItem="dFd-RH-sGu" secondAttribute="top" id="vb4-DM-v9f"/>
+                                            <constraint firstAttribute="bottom" secondItem="8qm-xn-pBm" secondAttribute="bottom" constant="20.5" id="vkM-7o-KZE"/>
+                                            <constraint firstAttribute="trailing" secondItem="I6h-FB-1qb" secondAttribute="trailing" constant="20" id="zqj-iC-net"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="8qm-xn-pBm" id="edR-Jx-tUm"/>
@@ -598,6 +598,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="X9k-cA-uac"/>
-        <segue reference="YTg-FI-5Nq"/>
+        <segue reference="8FY-ZZ-SkE"/>
     </inferredMetricsTieBreakers>
 </document>
