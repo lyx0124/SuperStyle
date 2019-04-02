@@ -16,19 +16,19 @@ struct Style {
     
     static var styles = [
         Style(name: "Mosaic",
-                image: UIImage(named: "intro")!,
+                image: UIImage(named: "mosaic")!,
                 shortDescription: "Mosaic style",
                 description: "Mosaic style"),
         Style(name: "Candy",
-                image: UIImage(named: "intro")!,
+                image: UIImage(named: "candy")!,
                 shortDescription: "Candy style",
                 description: "Candy style"),
         Style(name: "Rain Princess",
-                image: UIImage(named: "intro")!,
+                image: UIImage(named: "rain-princess")!,
                 shortDescription: "Rain Princess style",
                 description: "Rain Princess style"),
         Style(name: "Udnie",
-                image: UIImage(named: "intro")!,
+                image: UIImage(named: "udnie")!,
                 shortDescription: "Udnie style",
                 description: "Udnie style")
     ]
