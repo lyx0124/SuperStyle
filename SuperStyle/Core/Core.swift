@@ -18,41 +18,41 @@ extension FeatureViewController {
             case 0:
                 applyMosaic(input: input)
             case 1:
-                print("01")
+                showAlertWithMessage(message: "To be developed.")
             case 2:
-                print("02")
+                showAlertWithMessage(message: "To be developed.")
             case 3:
-                print("03")
+                showAlertWithMessage(message: "To be developed.")
             default:
-                print("error") //test
+                showAlertWithMessage(message: "Error!")
             }
         }
         else if featureNumber == 1 { //from portraits cell
             switch style {
             case 0:
-                print("10")
+                showAlertWithMessage(message: "To be developed.")
             case 1:
-                print("11")
+                showAlertWithMessage(message: "To be developed.")
             case 2:
-                print("12")
+                showAlertWithMessage(message: "To be developed.")
             case 3:
-                print("13")
+                showAlertWithMessage(message: "To be developed.")
             default:
-                print("error") //test
+                showAlertWithMessage(message: "Error!")
             }
         }
         else if featureNumber == 2 { //from domains cell
             switch style {
             case 0:
-                print("20")
+                showAlertWithMessage(message: "To be developed.")
             case 1:
-                print("21")
+                showAlertWithMessage(message: "To be developed.")
             case 2:
-                print("22")
+                showAlertWithMessage(message: "To be developed.")
             case 3:
-                print("23")
+                showAlertWithMessage(message: "To be developed.")
             default:
-                print("error") //test
+                showAlertWithMessage(message: "Error!")
             }
         }
     }

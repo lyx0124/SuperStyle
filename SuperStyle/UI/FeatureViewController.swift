@@ -123,9 +123,7 @@ extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDel
             }
         }
         else{
-            let alert = UIAlertController(title: nil, message: "Please take or choose a photo first", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
+            showAlertWithMessage(message: "Please take or choose a photo first.")
         }
     }
     
