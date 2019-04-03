@@ -18,10 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SSVC" translatesAutoresizingMaskIntoConstraints="NO" id="23N-iM-piI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SVC" translatesAutoresizingMaskIntoConstraints="NO" id="23N-iM-piI">
                                 <rect key="frame" x="-44" y="0.0" width="502" height="896"/>
-                                <variation key="heightClass=compact-widthClass=compact" image="SSVCR"/>
-                                <variation key="heightClass=compact-widthClass=regular" image="SSVCR"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-TY-lwf">
                                 <rect key="frame" x="0.0" y="144" width="414" height="124"/>
@@ -594,8 +592,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SSVC" width="576" height="1024"/>
-        <image name="SSVCR" width="1024" height="576"/>
         <image name="SVC" width="576" height="1024"/>
         <image name="camera" width="32" height="32"/>
         <image name="go" width="50" height="50"/>
