@@ -55,9 +55,6 @@ extension FeatureViewController {
                 print("error") //test
             }
         }
-        else {
-            print("error") //test
-        }
     }
     
     func applyMosaic(input: UIImage) {
