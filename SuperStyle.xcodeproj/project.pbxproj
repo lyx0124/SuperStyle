@@ -16,6 +16,7 @@
 		F687A6E1224A3D0800E98824 /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687A6E0224A3D0800E98824 /* FeatureViewController.swift */; };
 		F687A6E3224A3E9C00E98824 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687A6E2224A3E9C00E98824 /* Feature.swift */; };
 		F687A6E5224A3EA400E98824 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687A6E4224A3EA400E98824 /* FeatureCell.swift */; };
+		F68B08602254719E00AE3C5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F68B085F2254719E00AE3C5B /* README.md */; };
 		F68D31042251FC5C002700C8 /* StyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D31032251FC5C002700C8 /* StyleCell.swift */; };
 		F68D310622520271002700C8 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D310522520271002700C8 /* Style.swift */; };
 		F6AFBFD022543F85007468BA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFCF22543F85007468BA /* Utils.swift */; };
@@ -47,6 +48,7 @@
 		F687A6E0224A3D0800E98824 /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
 		F687A6E2224A3E9C00E98824 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		F687A6E4224A3EA400E98824 /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		F68B085F2254719E00AE3C5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F68D31032251FC5C002700C8 /* StyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCell.swift; sourceTree = "<group>"; };
 		F68D310522520271002700C8 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		F6AFBFCF22543F85007468BA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				F645141F223F30AF006230DA /* AppDelegate.swift */,
 				F645142B223F30B0006230DA /* Info.plist */,
+				F68B085F2254719E00AE3C5B /* README.md */,
 				F6EA78E62248B0E2001DC8D1 /* Assets.xcassets */,
 				F6451423223F30AF006230DA /* Main.storyboard */,
 				F6451428223F30B0006230DA /* LaunchScreen.storyboard */,
@@ -236,6 +239,7 @@
 			files = (
 				F645142A223F30B0006230DA /* LaunchScreen.storyboard in Resources */,
 				F6EA78E72248B0E2001DC8D1 /* Assets.xcassets in Resources */,
+				F68B08602254719E00AE3C5B /* README.md in Resources */,
 				F6451425223F30AF006230DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
