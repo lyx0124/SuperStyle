@@ -19,23 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SVC" translatesAutoresizingMaskIntoConstraints="NO" id="23N-iM-piI">
-                                <rect key="frame" x="-44" y="0.0" width="502" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-TY-lwf">
-                                <rect key="frame" x="0.0" y="144" width="414" height="124"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Super Style">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="36" name="Zapfino"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4b-By-gjY">
                                 <rect key="frame" x="0.0" y="792" width="414" height="50"/>
                                 <state key="normal" image="more">
@@ -45,19 +30,26 @@
                                     <segue destination="osz-TH-IYb" kind="presentation" id="XOG-81-0vH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SuperStyle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UtD-TY-lwf">
+                                <rect key="frame" x="64" y="371" width="286.5" height="164.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="UtD-TY-lwf" firstAttribute="top" secondItem="OlY-FP-qLc" secondAttribute="top" constant="100" id="9I0-38-vOj"/>
-                            <constraint firstItem="OlY-FP-qLc" firstAttribute="trailing" secondItem="23N-iM-piI" secondAttribute="trailing" constant="-44" id="A1l-CS-lzv"/>
+                            <constraint firstItem="OlY-FP-qLc" firstAttribute="trailing" secondItem="23N-iM-piI" secondAttribute="trailing" id="A1l-CS-lzv"/>
                             <constraint firstItem="OlY-FP-qLc" firstAttribute="bottom" secondItem="q4b-By-gjY" secondAttribute="bottom" constant="20" id="Bkr-yj-V27"/>
-                            <constraint firstItem="OlY-FP-qLc" firstAttribute="trailing" secondItem="UtD-TY-lwf" secondAttribute="trailing" id="LF4-z1-1u3"/>
-                            <constraint firstItem="23N-iM-piI" firstAttribute="leading" secondItem="OlY-FP-qLc" secondAttribute="leading" constant="-44" id="Qlv-fB-rOD"/>
+                            <constraint firstItem="23N-iM-piI" firstAttribute="leading" secondItem="OlY-FP-qLc" secondAttribute="leading" id="Qlv-fB-rOD"/>
                             <constraint firstItem="OlY-FP-qLc" firstAttribute="top" secondItem="23N-iM-piI" secondAttribute="top" constant="44" id="RlU-gJ-MnW"/>
+                            <constraint firstItem="UtD-TY-lwf" firstAttribute="centerX" secondItem="OlY-FP-qLc" secondAttribute="centerX" id="Zee-fB-51q"/>
                             <constraint firstItem="OlY-FP-qLc" firstAttribute="bottom" secondItem="23N-iM-piI" secondAttribute="bottom" constant="-34" id="clI-d0-o8s"/>
                             <constraint firstItem="OlY-FP-qLc" firstAttribute="trailing" secondItem="q4b-By-gjY" secondAttribute="trailing" id="e3I-IS-vGD"/>
                             <constraint firstItem="q4b-By-gjY" firstAttribute="leading" secondItem="OlY-FP-qLc" secondAttribute="leading" id="iDs-rh-1L0"/>
-                            <constraint firstItem="UtD-TY-lwf" firstAttribute="leading" secondItem="OlY-FP-qLc" secondAttribute="leading" id="qR5-uA-lMH"/>
+                            <constraint firstItem="UtD-TY-lwf" firstAttribute="centerY" secondItem="OlY-FP-qLc" secondAttribute="centerY" id="zXd-PE-WR0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OlY-FP-qLc"/>
                     </view>
