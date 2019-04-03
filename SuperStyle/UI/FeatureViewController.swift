@@ -13,7 +13,7 @@ class FeatureViewController: UIViewController {
     
     var feature: Feature?
     var featureNumber: Int?
-    var originalImage: UIImage? //store original chosen image, maybe need to save to memory and use image url
+    var url: URL?
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: UIImageView!
@@ -49,13 +49,9 @@ class FeatureViewController: UIViewController {
             self.present(imagePickerController, animated: true, completion: nil)
         }))
         
-        actionSheet.addAction(UIAlertAction(title: "Photo", style: .default, handler: { (action: UIAlertAction) in
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action: UIAlertAction) in
             imagePickerController.sourceType = .photoLibrary
             self.present(imagePickerController, animated: true, completion: nil)
-        }))
-        
-        actionSheet.addAction(UIAlertAction(title: "Save", style: .default, handler: { (action: UIAlertAction) in
-            //save image to photo library
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
@@ -76,7 +72,7 @@ extension FeatureViewController: UIImagePickerControllerDelegate, UINavigationCo
             photo.contentMode = UIView.ContentMode.scaleAspectFit
         }
         photo.image = image
-        originalImage = image
+        url = saveImage(image: image)
         picker.dismiss(animated: true, completion: nil)
     }
     
@@ -99,7 +95,7 @@ extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDel
         case 2:
             count = Style.domains.count
         default:
-            count = 0 //test
+            count = 0
         }
         return count
     }
@@ -114,8 +110,7 @@ extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDel
         case 2:
             cell.style = Style.domains[indexPath.item]
         default:
-            cell.style = nil //test
-            print("style error")
+            cell.style = nil
         }
     
         return cell
@@ -123,65 +118,14 @@ extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if let image = originalImage {
+        if let image = getImageFromURL(url: url) {
             applyStyle(input: image, style: indexPath.item)
         }
         else {
             //need to disable and enable style cell interaction when necessary
             //and this is clearly not right
+            //or maybe just show alert when photo is nil
             collectionView.cellForItem(at: indexPath)?.isUserInteractionEnabled = false
-        }
-    }
-    
-}
-
-extension FeatureViewController {
-   
-    func applyStyle(input: UIImage, style: Int) {
-        if featureNumber == 0 { //from styles cell
-            switch style {
-            case 0:
-                print("00")
-            case 1:
-                print("01")
-            case 2:
-                print("02")
-            case 3:
-                print("03")
-            default:
-                print("error") //test
-            }
-        }
-        else if featureNumber == 1 { //from portraits cell
-            switch style {
-            case 0:
-                print("10")
-            case 1:
-                print("11")
-            case 2:
-                print("12")
-            case 3:
-                print("13")
-            default:
-                print("error") //test
-            }
-        }
-        else if featureNumber == 2 { //from domains cell
-            switch style {
-            case 0:
-                print("20")
-            case 1:
-                print("21")
-            case 2:
-                print("22")
-            case 3:
-                print("23")
-            default:
-                print("error") //test
-            }
-        }
-        else {
-            print("error") //test
         }
     }
     

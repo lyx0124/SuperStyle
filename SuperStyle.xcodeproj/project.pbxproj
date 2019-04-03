@@ -18,6 +18,9 @@
 		F687A6E5224A3EA400E98824 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687A6E4224A3EA400E98824 /* FeatureCell.swift */; };
 		F68D31042251FC5C002700C8 /* StyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D31032251FC5C002700C8 /* StyleCell.swift */; };
 		F68D310622520271002700C8 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D310522520271002700C8 /* Style.swift */; };
+		F6AFBFD022543F85007468BA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFCF22543F85007468BA /* Utils.swift */; };
+		F6AFBFD2225457BA007468BA /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */; };
+		F6AFBFD4225457D7007468BA /* UIImage+CoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */; };
 		F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA3DD3224202760035C326 /* MenuViewController.swift */; };
 		F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E02248A483001DC8D1 /* IntroViewController.swift */; };
 		F6EA78E32248AE2F001DC8D1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E22248AE2F001DC8D1 /* Section.swift */; };
@@ -46,6 +49,9 @@
 		F687A6E4224A3EA400E98824 /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
 		F68D31032251FC5C002700C8 /* StyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCell.swift; sourceTree = "<group>"; };
 		F68D310522520271002700C8 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		F6AFBFCF22543F85007468BA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreML.swift"; sourceTree = "<group>"; };
 		F6DA3DD3224202760035C326 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F6EA78E02248A483001DC8D1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F6EA78E22248AE2F001DC8D1 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -153,6 +159,9 @@
 				F687A6E4224A3EA400E98824 /* FeatureCell.swift */,
 				F68D310522520271002700C8 /* Style.swift */,
 				F68D31032251FC5C002700C8 /* StyleCell.swift */,
+				F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */,
+				F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */,
+				F6AFBFCF22543F85007468BA /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F2C2BA2253A2CD00363473 /* UdnieModel.mlmodel in Sources */,
+				F6AFBFD4225457D7007468BA /* UIImage+CoreML.swift in Sources */,
 				F6451422223F30AF006230DA /* SuperStyleViewController.swift in Sources */,
 				F6EA78E32248AE2F001DC8D1 /* Section.swift in Sources */,
 				F6EA78E52248AE3F001DC8D1 /* SectionCell.swift in Sources */,
@@ -296,8 +306,10 @@
 				F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */,
 				F687A6E3224A3E9C00E98824 /* Feature.swift in Sources */,
 				F6451420223F30AF006230DA /* AppDelegate.swift in Sources */,
+				F6AFBFD022543F85007468BA /* Utils.swift in Sources */,
 				F687A6E5224A3EA400E98824 /* FeatureCell.swift in Sources */,
 				F6F2C2B52253509C00363473 /* Core.swift in Sources */,
+				F6AFBFD2225457BA007468BA /* UIImage+Resize.swift in Sources */,
 				F6F2C2B92253A2CD00363473 /* RainPrincessModel.mlmodel in Sources */,
 				F6F2C2B122533F7A00363473 /* MosaicModel.mlmodel in Sources */,
 				F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */,
