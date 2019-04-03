@@ -18,11 +18,11 @@ extension FeatureViewController {
             case 0:
                 applyMosaic(input: input)
             case 1:
-                showAlertWithMessage(message: "To be developed.")
+                applyCandy(input: input)
             case 2:
-                showAlertWithMessage(message: "To be developed.")
+                applyRainPrincess(input: input)
             case 3:
-                showAlertWithMessage(message: "To be developed.")
+                applyUdnie(input: input)
             default:
                 showAlertWithMessage(message: "Error!")
             }
@@ -59,6 +59,54 @@ extension FeatureViewController {
     
     func applyMosaic(input: UIImage) {
         let model = MosaicModel()
+        DispatchQueue.global().async {
+            self.showWaitingAlert()
+            guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(_0: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func applyCandy(input: UIImage) {
+        let model = CandyModel()
+        DispatchQueue.global().async {
+            self.showWaitingAlert()
+            guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(_0: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func applyRainPrincess(input: UIImage) {
+        let model = RainPrincessModel()
+        DispatchQueue.global().async {
+            self.showWaitingAlert()
+            guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(_0: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func applyUdnie(input: UIImage) {
+        let model = UdnieModel()
         DispatchQueue.global().async {
             self.showWaitingAlert()
             guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
