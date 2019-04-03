@@ -117,15 +117,15 @@ extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        if let image = getImageFromURL(url: url) {
-            applyStyle(input: image, style: indexPath.item)
+        if photo.image != nil{
+            if let image = getImageFromURL(url: url) {
+                applyStyle(input: image, style: indexPath.item)
+            }
         }
-        else {
-            //need to disable and enable style cell interaction when necessary
-            //and this is clearly not right
-            //or maybe just show alert when photo is nil
-            collectionView.cellForItem(at: indexPath)?.isUserInteractionEnabled = false
+        else{
+            let alert = UIAlertController(title: nil, message: "Please take or choose a photo first", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
     }
     
