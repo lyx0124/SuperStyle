@@ -61,10 +61,11 @@ extension FeatureViewController {
         let model = MosaicModel()
         DispatchQueue.global().async {
             self.showWaitingAlert()
-            guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
+            //this resize here controlls the memory, speed and precision of the transfer
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
-            guard let output = try? model.prediction(_0: cvBufferInput) else { return }
-            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
             guard let finalImage = outputImage.resize(to: input.size) else { return }
             DispatchQueue.main.async {
                 self.photo.image = finalImage
@@ -77,10 +78,10 @@ extension FeatureViewController {
         let model = CandyModel()
         DispatchQueue.global().async {
             self.showWaitingAlert()
-            guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
-            guard let output = try? model.prediction(_0: cvBufferInput) else { return }
-            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
             guard let finalImage = outputImage.resize(to: input.size) else { return }
             DispatchQueue.main.async {
                 self.photo.image = finalImage
@@ -93,10 +94,10 @@ extension FeatureViewController {
         let model = RainPrincessModel()
         DispatchQueue.global().async {
             self.showWaitingAlert()
-            guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
-            guard let output = try? model.prediction(_0: cvBufferInput) else { return }
-            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
             guard let finalImage = outputImage.resize(to: input.size) else { return }
             DispatchQueue.main.async {
                 self.photo.image = finalImage
@@ -109,10 +110,10 @@ extension FeatureViewController {
         let model = UdnieModel()
         DispatchQueue.global().async {
             self.showWaitingAlert()
-            guard let inputImage = input.resize(to: CGSize(width: 1080, height: 1080)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
-            guard let output = try? model.prediction(_0: cvBufferInput) else { return }
-            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
             guard let finalImage = outputImage.resize(to: input.size) else { return }
             DispatchQueue.main.async {
                 self.photo.image = finalImage
