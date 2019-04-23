@@ -468,10 +468,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHY-dC-yrw">
-                                <rect key="frame" x="0.0" y="173.5" width="414" height="413"/>
+                                <rect key="frame" x="0.0" y="143.5" width="414" height="431"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="weA-7r-hdI">
-                                <rect key="frame" x="0.0" y="586.5" width="414" height="275.5"/>
+                                <rect key="frame" x="0.0" y="574.5" width="414" height="287.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wcx-Yd-Blc">
                                     <size key="itemSize" width="175" height="175"/>
@@ -481,7 +481,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="dFd-RH-sGu" customClass="StyleCell" customModule="SuperStyle" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="50.5" width="175" height="175"/>
+                                        <rect key="frame" x="30" y="56.5" width="175" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
@@ -534,7 +534,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxY-gS-szv">
-                                <rect key="frame" x="362" y="537" width="32" height="32"/>
+                                <rect key="frame" x="362" y="525" width="32" height="32"/>
                                 <state key="normal" image="share"/>
                             </button>
                         </subviews>
@@ -549,7 +549,7 @@
                             <constraint firstItem="48W-AT-IG0" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="Msp-Rw-9mU"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="fHY-dC-yrw" secondAttribute="trailing" id="NTe-rD-6be"/>
                             <constraint firstItem="gzD-xk-RhA" firstAttribute="top" secondItem="4Ro-i8-91m" secondAttribute="bottom" constant="8" id="P3i-iQ-Ptw"/>
-                            <constraint firstItem="fHY-dC-yrw" firstAttribute="top" secondItem="gzD-xk-RhA" secondAttribute="bottom" constant="50" id="RAL-PE-Lz7"/>
+                            <constraint firstItem="fHY-dC-yrw" firstAttribute="top" secondItem="gzD-xk-RhA" secondAttribute="bottom" constant="20" id="RAL-PE-Lz7"/>
                             <constraint firstItem="4Ro-i8-91m" firstAttribute="top" secondItem="JvO-Ee-bBy" secondAttribute="top" constant="14" id="S1I-sO-UUo"/>
                             <constraint firstItem="gzD-xk-RhA" firstAttribute="centerX" secondItem="JvO-Ee-bBy" secondAttribute="centerX" id="TnG-ul-NSl"/>
                             <constraint firstItem="4Ro-i8-91m" firstAttribute="centerX" secondItem="JvO-Ee-bBy" secondAttribute="centerX" id="YbG-oW-gDJ"/>
