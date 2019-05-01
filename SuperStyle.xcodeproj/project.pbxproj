@@ -133,6 +133,12 @@
 		F68D30F42251F4DA002700C8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F6EA78E22248AE2F001DC8D1 /* Section.swift */,
+				F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */,
+				F687A6E2224A3E9C00E98824 /* Feature.swift */,
+				F687A6E4224A3EA400E98824 /* FeatureCell.swift */,
+				F68D310522520271002700C8 /* Style.swift */,
+				F68D31032251FC5C002700C8 /* StyleCell.swift */,
 				F6451421223F30AF006230DA /* SuperStyleViewController.swift */,
 				F6DA3DD3224202760035C326 /* MenuViewController.swift */,
 				F6EA78E02248A483001DC8D1 /* IntroViewController.swift */,
@@ -156,12 +162,6 @@
 		F6F2C2B22253495B00363473 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F6EA78E22248AE2F001DC8D1 /* Section.swift */,
-				F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */,
-				F687A6E2224A3E9C00E98824 /* Feature.swift */,
-				F687A6E4224A3EA400E98824 /* FeatureCell.swift */,
-				F68D310522520271002700C8 /* Style.swift */,
-				F68D31032251FC5C002700C8 /* StyleCell.swift */,
 				F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */,
 				F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */,
 				F6AFBFCF22543F85007468BA /* Utils.swift */,
