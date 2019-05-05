@@ -460,18 +460,11 @@
                                     <action selector="hero_dismissViewController" destination="NI7-tD-gB4" eventType="touchUpInside" id="N2u-b3-LbJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUO-K8-PqD">
-                                <rect key="frame" x="362" y="60" width="32" height="32"/>
-                                <state key="normal" image="camera"/>
-                                <connections>
-                                    <action selector="pickImage:" destination="Iid-xn-gUK" eventType="touchUpInside" id="vwa-wD-nG3"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHY-dC-yrw">
-                                <rect key="frame" x="0.0" y="143.5" width="414" height="431"/>
+                                <rect key="frame" x="0.0" y="143.5" width="414" height="404.5"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="weA-7r-hdI">
-                                <rect key="frame" x="0.0" y="574.5" width="414" height="287.5"/>
+                                <rect key="frame" x="0.0" y="548" width="414" height="270"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wcx-Yd-Blc">
                                     <size key="itemSize" width="175" height="175"/>
@@ -481,7 +474,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="dFd-RH-sGu" customClass="StyleCell" customModule="SuperStyle" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="56.5" width="175" height="175"/>
+                                        <rect key="frame" x="30" y="47.5" width="175" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
@@ -533,17 +526,35 @@
                                     <outlet property="delegate" destination="Iid-xn-gUK" id="qrg-E0-jnn"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxY-gS-szv">
-                                <rect key="frame" x="362" y="525" width="32" height="32"/>
-                                <state key="normal" image="share"/>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvn-Do-cW0">
+                                <rect key="frame" x="0.0" y="1047" width="453" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5fw-uL-Qz8"/>
+                                    <barButtonItem systemItem="camera" id="MvQ-Di-3xZ">
+                                        <connections>
+                                            <action selector="pickImage:" destination="Iid-xn-gUK" id="eHf-cD-KBw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YeU-0S-DJS"/>
+                                    <barButtonItem systemItem="save" id="XKs-tQ-dsw">
+                                        <connections>
+                                            <action selector="saveResult:" destination="Iid-xn-gUK" id="0Sg-Dd-FdK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5JA-Gh-88P"/>
+                                    <barButtonItem systemItem="action" id="Int-gx-wdA">
+                                        <connections>
+                                            <action selector="shareImage:" destination="Iid-xn-gUK" id="v2b-Oi-Fqq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4BN-x6-ywi"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PUO-K8-PqD" firstAttribute="leading" secondItem="4Ro-i8-91m" secondAttribute="trailing" constant="62" id="1ys-f4-6bp"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="weA-7r-hdI" secondAttribute="trailing" id="29h-UO-zIK"/>
-                            <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="yxY-gS-szv" secondAttribute="trailing" constant="20" id="75I-Q8-mdQ"/>
-                            <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="PUO-K8-PqD" secondAttribute="trailing" constant="20" id="8Cb-cO-u16"/>
+                            <constraint firstItem="Nvn-Do-cW0" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="Dn5-h2-9Xc"/>
                             <constraint firstItem="weA-7r-hdI" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="Dr3-zm-0Ip"/>
                             <constraint firstItem="bU7-Ze-HgL" firstAttribute="top" secondItem="JvO-Ee-bBy" secondAttribute="top" constant="8" id="EAj-Ar-uC5"/>
                             <constraint firstItem="48W-AT-IG0" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="Msp-Rw-9mU"/>
@@ -555,12 +566,11 @@
                             <constraint firstItem="4Ro-i8-91m" firstAttribute="centerX" secondItem="JvO-Ee-bBy" secondAttribute="centerX" id="YbG-oW-gDJ"/>
                             <constraint firstItem="fHY-dC-yrw" firstAttribute="height" secondItem="weA-7r-hdI" secondAttribute="height" multiplier="1.5" id="Z8T-vI-FQ1"/>
                             <constraint firstItem="fHY-dC-yrw" firstAttribute="leading" secondItem="JvO-Ee-bBy" secondAttribute="leading" id="ZXr-nA-4uC"/>
+                            <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="Nvn-Do-cW0" secondAttribute="trailing" id="Zg0-P0-Mpf"/>
                             <constraint firstItem="bU7-Ze-HgL" firstAttribute="leading" secondItem="kGk-Yx-3S1" secondAttribute="leadingMargin" constant="-12" id="bgv-B6-2Kw"/>
-                            <constraint firstItem="JvO-Ee-bBy" firstAttribute="bottom" secondItem="weA-7r-hdI" secondAttribute="bottom" id="dRW-PH-Jn3"/>
                             <constraint firstItem="48W-AT-IG0" firstAttribute="bottom" secondItem="JvO-Ee-bBy" secondAttribute="bottom" constant="34" id="hQv-Et-LJj"/>
-                            <constraint firstItem="weA-7r-hdI" firstAttribute="top" secondItem="yxY-gS-szv" secondAttribute="bottom" constant="17.5" id="iZO-zs-THe"/>
-                            <constraint firstItem="gzD-xk-RhA" firstAttribute="top" secondItem="PUO-K8-PqD" secondAttribute="bottom" constant="11" id="ib1-ce-Z9K"/>
-                            <constraint firstItem="PUO-K8-PqD" firstAttribute="top" secondItem="JvO-Ee-bBy" secondAttribute="top" constant="16" id="s0L-37-YTT"/>
+                            <constraint firstItem="Nvn-Do-cW0" firstAttribute="top" secondItem="weA-7r-hdI" secondAttribute="bottom" id="har-mW-Fsd"/>
+                            <constraint firstItem="Nvn-Do-cW0" firstAttribute="bottom" secondItem="JvO-Ee-bBy" secondAttribute="bottom" id="o7c-hk-Ngl"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="top" secondItem="48W-AT-IG0" secondAttribute="top" constant="44" id="ty0-d6-Z61"/>
                             <constraint firstItem="weA-7r-hdI" firstAttribute="top" secondItem="fHY-dC-yrw" secondAttribute="bottom" id="uR5-dA-hcm"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="trailing" secondItem="48W-AT-IG0" secondAttribute="trailing" id="zPG-8D-8ZT"/>
@@ -585,11 +595,9 @@
     </scenes>
     <resources>
         <image name="SVC" width="576" height="1024"/>
-        <image name="camera" width="32" height="32"/>
         <image name="go" width="50" height="50"/>
         <image name="more" width="50" height="50"/>
         <image name="return" width="24" height="24"/>
-        <image name="share" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="X9k-cA-uac"/>

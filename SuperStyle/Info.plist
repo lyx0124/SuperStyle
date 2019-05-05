@@ -28,6 +28,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>SuperStyle requires to access your Photo Library</string>
 	<key>NSCameraUsageDescription</key>
 	<string>SuperStyle requires to access your camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>

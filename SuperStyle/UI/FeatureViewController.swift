@@ -14,6 +14,7 @@ class FeatureViewController: UIViewController {
     var feature: Feature?
     var featureNumber: Int?
     var url: URL?
+    var styleApplied = false //record whether style transfer is used
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: UIImageView!
@@ -57,6 +58,37 @@ class FeatureViewController: UIViewController {
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         
         self.present(actionSheet, animated: true, completion: nil)
+    }
+    
+    @IBAction func saveResult(_ sender: Any) {
+        if let image = photo.image {
+            if styleApplied {
+                let imageData = image.pngData()
+                let compresedImage = UIImage(data: imageData!)
+                UIImageWriteToSavedPhotosAlbum(compresedImage!, nil, nil, nil)
+                
+                let alert = UIAlertController(title: "Saved", message: "Your photo has been saved.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+            }
+            else {
+                showAlertWithMessage(message: "Please choose a style first.")
+            }
+        }
+        else {
+            showAlertWithMessage(message: "No photo to save.")
+        }
+    }
+    
+    @IBAction func shareImage(_ sender: Any) {
+        if let image = photo.image {
+            let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            present(controller, animated: true, completion: nil)
+        }
+        else {
+            showAlertWithMessage(message: "No photo to share.")
+        }
     }
     
 }
@@ -120,6 +152,7 @@ extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDel
         if photo.image != nil{
             if let image = getImageFromURL(url: url) {
                 applyStyle(input: image, style: indexPath.item)
+                styleApplied = true
             }
         }
         else{
