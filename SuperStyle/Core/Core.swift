@@ -59,7 +59,7 @@ extension FeatureViewController {
     func applyMosaic(input: UIImage) {
         let model = MosaicModel()
         DispatchQueue.global().async {
-            self.showWaitingAlert()
+            self.showWaitingAlert(message: "Applying style...")
             //this resize here controlls the memory, speed and precision of the transfer
             guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
@@ -76,7 +76,7 @@ extension FeatureViewController {
     func applyCandy(input: UIImage) {
         let model = CandyModel()
         DispatchQueue.global().async {
-            self.showWaitingAlert()
+            self.showWaitingAlert(message: "Applying style...")
             guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
@@ -92,7 +92,7 @@ extension FeatureViewController {
     func applyRainPrincess(input: UIImage) {
         let model = RainPrincessModel()
         DispatchQueue.global().async {
-            self.showWaitingAlert()
+            self.showWaitingAlert(message: "Applying style...")
             guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
@@ -108,7 +108,7 @@ extension FeatureViewController {
     func applyUdnie(input: UIImage) {
         let model = UdnieModel()
         DispatchQueue.global().async {
-            self.showWaitingAlert()
+            self.showWaitingAlert(message: "Applying style...")
             guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }

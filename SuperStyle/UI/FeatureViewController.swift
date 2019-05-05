@@ -83,7 +83,9 @@ class FeatureViewController: UIViewController {
     
     @IBAction func shareImage(_ sender: Any) {
         if let image = photo.image {
-            let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            let imageData = image.pngData()
+            let compresedImage = UIImage(data: imageData!)
+            let controller = UIActivityViewController(activityItems: [compresedImage!], applicationActivities: nil)
             present(controller, animated: true, completion: nil)
         }
         else {
