@@ -9,7 +9,7 @@
 import UIKit
 import Hero
 
-class FeatureViewController: UIViewController {
+class FeatureViewController: UIViewController, UIScrollViewDelegate {
     
     var feature: Feature?
     var featureNumber: Int?
@@ -21,9 +21,13 @@ class FeatureViewController: UIViewController {
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.minimumZoomScale = 1.0
+        scrollView.maximumZoomScale = 10.0
         
         if let feature = feature {
             let name = feature.name
@@ -37,6 +41,10 @@ class FeatureViewController: UIViewController {
             descriptionLabel.hero.modifiers = [.zPosition(4)]
             descriptionLabel.text = feature.description
         }
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? { //pinch to zoom
+        return photo
     }
     
     @IBAction func pickImage(_ sender: Any) {
