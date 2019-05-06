@@ -57,11 +57,11 @@ extension FeatureViewController {
     }
     
     func applyMosaic(input: UIImage) {
-        let model = MosaicModel()
+        let model = candy_quant_flexible()
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
             //this resize here controlls the memory, speed and precision of the transfer
-            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 1024, height: 1024)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
             guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
@@ -74,10 +74,10 @@ extension FeatureViewController {
     }
     
     func applyCandy(input: UIImage) {
-        let model = CandyModel()
+        let model = candy1()
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
-            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 1024, height: 1024)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
             guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
@@ -90,10 +90,10 @@ extension FeatureViewController {
     }
     
     func applyRainPrincess(input: UIImage) {
-        let model = RainPrincessModel()
+        let model = candy8()
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
-            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 1024, height: 1024)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
             guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
@@ -106,10 +106,10 @@ extension FeatureViewController {
     }
     
     func applyUdnie(input: UIImage) {
-        let model = UdnieModel()
+        let model = candy4()
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
-            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 1024, height: 1024)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
             guard let outputImage = UIImage(pixelBuffer: output._128) else { return }

@@ -26,6 +26,13 @@
 		F6AFBFD022543F85007468BA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFCF22543F85007468BA /* Utils.swift */; };
 		F6AFBFD2225457BA007468BA /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */; };
 		F6AFBFD4225457D7007468BA /* UIImage+CoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */; };
+		F6C2C597227FC84C00DD04DF /* candy4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6C2C591227FC84B00DD04DF /* candy4.mlmodel */; };
+		F6C2C598227FC84C00DD04DF /* candy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6C2C592227FC84B00DD04DF /* candy.mlmodel */; };
+		F6C2C599227FC84C00DD04DF /* candy1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6C2C593227FC84B00DD04DF /* candy1.mlmodel */; };
+		F6C2C59A227FC84C00DD04DF /* candy8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6C2C594227FC84B00DD04DF /* candy8.mlmodel */; };
+		F6C2C59B227FC84C00DD04DF /* candy2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6C2C595227FC84B00DD04DF /* candy2.mlmodel */; };
+		F6C2C59C227FC84C00DD04DF /* candy16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6C2C596227FC84B00DD04DF /* candy16.mlmodel */; };
+		F6C2C59E227FD06E00DD04DF /* candy_quant_flexible.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6C2C59D227FD06D00DD04DF /* candy_quant_flexible.mlmodel */; };
 		F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA3DD3224202760035C326 /* MenuViewController.swift */; };
 		F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E02248A483001DC8D1 /* IntroViewController.swift */; };
 		F6EA78E32248AE2F001DC8D1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E22248AE2F001DC8D1 /* Section.swift */; };
@@ -58,6 +65,13 @@
 		F6AFBFCF22543F85007468BA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreML.swift"; sourceTree = "<group>"; };
+		F6C2C591227FC84B00DD04DF /* candy4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy4.mlmodel; sourceTree = "<group>"; };
+		F6C2C592227FC84B00DD04DF /* candy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy.mlmodel; sourceTree = "<group>"; };
+		F6C2C593227FC84B00DD04DF /* candy1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy1.mlmodel; sourceTree = "<group>"; };
+		F6C2C594227FC84B00DD04DF /* candy8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy8.mlmodel; sourceTree = "<group>"; };
+		F6C2C595227FC84B00DD04DF /* candy2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy2.mlmodel; sourceTree = "<group>"; };
+		F6C2C596227FC84B00DD04DF /* candy16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy16.mlmodel; sourceTree = "<group>"; };
+		F6C2C59D227FD06D00DD04DF /* candy_quant_flexible.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = candy_quant_flexible.mlmodel; sourceTree = "<group>"; };
 		F6DA3DD3224202760035C326 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F6EA78E02248A483001DC8D1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F6EA78E22248AE2F001DC8D1 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -151,6 +165,13 @@
 		F68D30F62251F4F8002700C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F6C2C59D227FD06D00DD04DF /* candy_quant_flexible.mlmodel */,
+				F6C2C592227FC84B00DD04DF /* candy.mlmodel */,
+				F6C2C593227FC84B00DD04DF /* candy1.mlmodel */,
+				F6C2C595227FC84B00DD04DF /* candy2.mlmodel */,
+				F6C2C591227FC84B00DD04DF /* candy4.mlmodel */,
+				F6C2C594227FC84B00DD04DF /* candy8.mlmodel */,
+				F6C2C596227FC84B00DD04DF /* candy16.mlmodel */,
 				F6756F99226EB2660011873A /* CandyModel.mlmodel */,
 				F6756F98226EB2660011873A /* MosaicModel.mlmodel */,
 				F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */,
@@ -303,19 +324,26 @@
 				F6756F9C226EB2660011873A /* MosaicModel.mlmodel in Sources */,
 				F6451422223F30AF006230DA /* SuperStyleViewController.swift in Sources */,
 				F6EA78E32248AE2F001DC8D1 /* Section.swift in Sources */,
+				F6C2C59C227FC84C00DD04DF /* candy16.mlmodel in Sources */,
 				F6EA78E52248AE3F001DC8D1 /* SectionCell.swift in Sources */,
 				F687A6E1224A3D0800E98824 /* FeatureViewController.swift in Sources */,
+				F6C2C599227FC84C00DD04DF /* candy1.mlmodel in Sources */,
 				F68D310622520271002700C8 /* Style.swift in Sources */,
+				F6C2C598227FC84C00DD04DF /* candy.mlmodel in Sources */,
 				F6756F9E226EB2660011873A /* RainPrincessModel.mlmodel in Sources */,
 				F61F3D51224A003300B4B5A2 /* SelectViewController.swift in Sources */,
 				F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */,
+				F6C2C597227FC84C00DD04DF /* candy4.mlmodel in Sources */,
 				F687A6E3224A3E9C00E98824 /* Feature.swift in Sources */,
 				F6451420223F30AF006230DA /* AppDelegate.swift in Sources */,
 				F6AFBFD022543F85007468BA /* Utils.swift in Sources */,
 				F687A6E5224A3EA400E98824 /* FeatureCell.swift in Sources */,
 				F6F2C2B52253509C00363473 /* Core.swift in Sources */,
+				F6C2C59E227FD06E00DD04DF /* candy_quant_flexible.mlmodel in Sources */,
 				F6756F9D226EB2660011873A /* CandyModel.mlmodel in Sources */,
 				F6AFBFD2225457BA007468BA /* UIImage+Resize.swift in Sources */,
+				F6C2C59B227FC84C00DD04DF /* candy2.mlmodel in Sources */,
+				F6C2C59A227FC84C00DD04DF /* candy8.mlmodel in Sources */,
 				F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */,
 				F68D31042251FC5C002700C8 /* StyleCell.swift in Sources */,
 			);
