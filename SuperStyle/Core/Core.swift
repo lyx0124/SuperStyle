@@ -61,7 +61,7 @@ extension FeatureViewController {
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
             //this resize here controlls the memory, speed and precision of the transfer
-            guard let inputImage = input.resize(to: CGSize(width: 128, height: 128)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 1024, height: 1024)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             
             let start = DispatchTime.now() // <<<<<<<<<< Start time
