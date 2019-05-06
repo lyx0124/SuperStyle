@@ -61,9 +61,18 @@ extension FeatureViewController {
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
             //this resize here controlls the memory, speed and precision of the transfer
-            guard let inputImage = input.resize(to: CGSize(width: 1024, height: 1024)) else { return }
+            guard let inputImage = input.resize(to: CGSize(width: 128, height: 128)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            
+            let start = DispatchTime.now() // <<<<<<<<<< Start time
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            let end = DispatchTime.now()   // <<<<<<<<<<   end time
+            let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
+            let timeInterval = Double(nanoTime) / 1_000_000_000 // Technically could overflow for long running tests
+            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+            print("Time: \(timeInterval) seconds")
+            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+            
             guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
             guard let finalImage = outputImage.resize(to: input.size) else { return }
             DispatchQueue.main.async {
