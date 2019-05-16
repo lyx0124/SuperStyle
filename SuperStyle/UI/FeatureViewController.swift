@@ -8,6 +8,7 @@
 
 import UIKit
 import Hero
+import CoreML
 
 class FeatureViewController: UIViewController, UIScrollViewDelegate {
     
@@ -15,6 +16,7 @@ class FeatureViewController: UIViewController, UIScrollViewDelegate {
     var featureNumber: Int?
     var url: URL?
     var styleApplied = false //record whether style transfer is used
+    var label = try! MLMultiArray(shape: [5], dataType: MLMultiArrayDataType.float32) // stargan label
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: UIImageView!
@@ -28,6 +30,11 @@ class FeatureViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 10.0
+        
+        //initialize label for stargan
+        for i in 1...5 {
+            label[i] = 0
+        }
         
         if let feature = feature {
             let name = feature.name

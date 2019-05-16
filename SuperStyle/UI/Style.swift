@@ -34,22 +34,30 @@ struct Style {
     ]
     
     static var portraits = [
+        Style(name: "",
+                image: UIImage(named: "stargan")!,
+                shortDescription: "",
+                description: ""),
+        Style(name: "Black",
+              image: UIImage(named: "blonde")!,
+              shortDescription: "Black hair",
+              description: "Black hair"),
         Style(name: "Blonde",
+              image: UIImage(named: "blonde")!,
+              shortDescription: "Blonde hair",
+              description: "Blonde hair"),
+        Style(name: "Brown",
                 image: UIImage(named: "blonde")!,
-                shortDescription: "Blonde style",
-                description: "Blonde style"),
+                shortDescription: "Brown hair",
+                description: "Brown hair"),
         Style(name: "Male",
                 image: UIImage(named: "male")!,
-                shortDescription: "Male style",
-                description: "Male style"),
-        Style(name: "Female",
-                image: UIImage(named: "female")!,
-                shortDescription: "Female style",
-                description: "Female style"),
-        Style(name: "Age",
-                image: UIImage(named: "age")!,
-                shortDescription: "Age style",
-                description: "Age style")
+                shortDescription: "Male or not",
+                description: "Male or not"),
+        Style(name: "Young",
+                image: UIImage(named: "male")!,
+                shortDescription: "Young or not",
+                description: "Young or not")
     ]
     
     static var domains = [

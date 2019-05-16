@@ -29,12 +29,17 @@ extension FeatureViewController {
         else if featureNumber == 1 { //from portraits cell
             switch style {
             case 0:
+                //applyStarGAN(input: input)
                 showAlertWithMessage(message: "To be developed.")
             case 1:
                 showAlertWithMessage(message: "To be developed.")
             case 2:
                 showAlertWithMessage(message: "To be developed.")
             case 3:
+                showAlertWithMessage(message: "To be developed.")
+            case 4:
+                showAlertWithMessage(message: "To be developed.")
+            case 5:
                 showAlertWithMessage(message: "To be developed.")
             default:
                 showAlertWithMessage(message: "Error!")
@@ -120,6 +125,22 @@ extension FeatureViewController {
             self.dismiss(animated: true, completion: nil)
         }
     }
+    
+//    func applyStarGAN(input: UIImage) {
+//        let model = Generator()
+//        DispatchQueue.global().async {
+//            self.showWaitingAlert(message: "Applying style...")
+//            guard let inputImage = input.resize(to: CGSize(width: 256, height: 256)) else { return }
+//            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+//            guard let output = try? model.prediction(_0: cvBufferInput, _1: self.label) else { return }
+//            guard let outputImage = UIImage(pixelBuffer: output._186) else { return }
+//            guard let finalImage = outputImage.resize(to: input.size) else { return }
+//            DispatchQueue.main.async {
+//                self.photo.image = finalImage
+//            }
+//            self.dismiss(animated: true, completion: nil)
+//        }
+//    }
     
 }
 
