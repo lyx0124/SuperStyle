@@ -60,8 +60,8 @@ extension FeatureViewController {
         else if featureNumber == 1 { //from portraits cell
             switch style {
             case 0:
-                applyStarGAN(input: input)
-                //showAlertWithMessage(message: "To be developed.")
+                //applyStarGAN(input: input)
+                showAlertWithMessage(message: "To be developed.")
             case 1:
                 showAlertWithMessage(message: "To be developed.")
             case 2:
