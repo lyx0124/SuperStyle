@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B7136CC5C34A7DF426B526C3 /* Pods_SuperStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D92EC385077A0C5B56F6E8 /* Pods_SuperStyle.framework */; };
 		F61F3D51224A003300B4B5A2 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61F3D50224A003300B4B5A2 /* SelectViewController.swift */; };
+		F62A2143228D38E700508F2A /* Generator.mlmodel in CopyFiles */ = {isa = PBXBuildFile; fileRef = F62A2142228D38E600508F2A /* Generator.mlmodel */; };
 		F6451420223F30AF006230DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F645141F223F30AF006230DA /* AppDelegate.swift */; };
 		F6451422223F30AF006230DA /* SuperStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6451421223F30AF006230DA /* SuperStyleViewController.swift */; };
 		F6451425223F30AF006230DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451423223F30AF006230DA /* Main.storyboard */; };
@@ -34,11 +35,25 @@
 		F6F2C2B52253509C00363473 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2C2B42253509C00363473 /* Core.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F62A2140228D387C00508F2A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				F62A2143228D38E700508F2A /* Generator.mlmodel in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		85D92EC385077A0C5B56F6E8 /* Pods_SuperStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2539D091C5AA3FEF4655B75 /* Pods-SuperStyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperStyle.debug.xcconfig"; path = "Target Support Files/Pods-SuperStyle/Pods-SuperStyle.debug.xcconfig"; sourceTree = "<group>"; };
 		EC9D7BCF3FA33FCC7A30CE8F /* Pods-SuperStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperStyle.release.xcconfig"; path = "Target Support Files/Pods-SuperStyle/Pods-SuperStyle.release.xcconfig"; sourceTree = "<group>"; };
 		F61F3D50224A003300B4B5A2 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		F62A2142228D38E600508F2A /* Generator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Generator.mlmodel; sourceTree = "<group>"; };
 		F645141C223F30AF006230DA /* SuperStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F645141F223F30AF006230DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6451421223F30AF006230DA /* SuperStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperStyleViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +113,7 @@
 		F6451413223F30AF006230DA = {
 			isa = PBXGroup;
 			children = (
+				F62A2142228D38E600508F2A /* Generator.mlmodel */,
 				F645141E223F30AF006230DA /* SuperStyle */,
 				F645141D223F30AF006230DA /* Products */,
 				E888D445F2BC0327E183B0CA /* Pods */,
@@ -189,6 +205,7 @@
 				F6451419223F30AF006230DA /* Frameworks */,
 				F645141A223F30AF006230DA /* Resources */,
 				7EB934A5AA151A170F8300FB /* [CP] Embed Pods Frameworks */,
+				F62A2140228D387C00508F2A /* CopyFiles */,
 			);
 			buildRules = (
 			);
