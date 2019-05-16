@@ -110,10 +110,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F62A2144228D5E8E00508F2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6EA78E22248AE2F001DC8D1 /* Section.swift */,
+				F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */,
+				F687A6E2224A3E9C00E98824 /* Feature.swift */,
+				F687A6E4224A3EA400E98824 /* FeatureCell.swift */,
+				F68D310522520271002700C8 /* Style.swift */,
+				F68D31032251FC5C002700C8 /* StyleCell.swift */,
+			);
+			name = View;
+			path = View.temp_caseinsensitive_rename.;
+			sourceTree = "<group>";
+		};
 		F6451413223F30AF006230DA = {
 			isa = PBXGroup;
 			children = (
-				F62A2142228D38E600508F2A /* Generator.mlmodel */,
 				F645141E223F30AF006230DA /* SuperStyle */,
 				F645141D223F30AF006230DA /* Products */,
 				E888D445F2BC0327E183B0CA /* Pods */,
@@ -138,30 +151,26 @@
 				F6EA78E62248B0E2001DC8D1 /* Assets.xcassets */,
 				F6451423223F30AF006230DA /* Main.storyboard */,
 				F6451428223F30B0006230DA /* LaunchScreen.storyboard */,
+				F62A2142228D38E600508F2A /* Generator.mlmodel */,
 				F68D30F62251F4F8002700C8 /* Model */,
+				F62A2144228D5E8E00508F2A /* View */,
+				F68D30F42251F4DA002700C8 /* Controller */,
 				F6F2C2B32253507D00363473 /* Core */,
-				F68D30F42251F4DA002700C8 /* UI */,
 				F6F2C2B22253495B00363473 /* Utils */,
 			);
 			path = SuperStyle;
 			sourceTree = "<group>";
 		};
-		F68D30F42251F4DA002700C8 /* UI */ = {
+		F68D30F42251F4DA002700C8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F6EA78E22248AE2F001DC8D1 /* Section.swift */,
-				F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */,
-				F687A6E2224A3E9C00E98824 /* Feature.swift */,
-				F687A6E4224A3EA400E98824 /* FeatureCell.swift */,
-				F68D310522520271002700C8 /* Style.swift */,
-				F68D31032251FC5C002700C8 /* StyleCell.swift */,
 				F6451421223F30AF006230DA /* SuperStyleViewController.swift */,
 				F6DA3DD3224202760035C326 /* MenuViewController.swift */,
 				F6EA78E02248A483001DC8D1 /* IntroViewController.swift */,
 				F61F3D50224A003300B4B5A2 /* SelectViewController.swift */,
 				F687A6E0224A3D0800E98824 /* FeatureViewController.swift */,
 			);
-			path = UI;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F68D30F62251F4F8002700C8 /* Model */ = {
