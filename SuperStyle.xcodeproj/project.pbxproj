@@ -151,7 +151,6 @@
 				F6EA78E62248B0E2001DC8D1 /* Assets.xcassets */,
 				F6451423223F30AF006230DA /* Main.storyboard */,
 				F6451428223F30B0006230DA /* LaunchScreen.storyboard */,
-				F62A2142228D38E600508F2A /* Generator.mlmodel */,
 				F68D30F62251F4F8002700C8 /* Model */,
 				F62A2144228D5E8E00508F2A /* View */,
 				F68D30F42251F4DA002700C8 /* Controller */,
@@ -176,6 +175,7 @@
 		F68D30F62251F4F8002700C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F62A2142228D38E600508F2A /* Generator.mlmodel */,
 				F6756F99226EB2660011873A /* CandyModel.mlmodel */,
 				F6756F98226EB2660011873A /* MosaicModel.mlmodel */,
 				F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */,

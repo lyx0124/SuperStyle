@@ -158,7 +158,7 @@ extension FeatureViewController {
     }
     
     func applyStarGAN(input: UIImage) {
-        let modelUrl = URL(string: "Generator.mlmodel")
+        let modelUrl = Bundle.main.url(forResource: "Generator", withExtension: "mlmodel")
         let compiledUrl = try? MLModel.compileModel(at: modelUrl!)
         let model = try? MLModel(contentsOf: compiledUrl!)
         DispatchQueue.global().async {
