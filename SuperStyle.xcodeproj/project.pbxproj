@@ -110,7 +110,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F62A2144228D5E8E00508F2A /* View */ = {
+		F62A2144228D5E8E00508F2A /* maoergmero */ = {
 			isa = PBXGroup;
 			children = (
 				F6EA78E22248AE2F001DC8D1 /* Section.swift */,
@@ -120,7 +120,7 @@
 				F68D310522520271002700C8 /* Style.swift */,
 				F68D31032251FC5C002700C8 /* StyleCell.swift */,
 			);
-			name = View;
+			name = maoergmero;
 			path = View.temp_caseinsensitive_rename.;
 			sourceTree = "<group>";
 		};
@@ -152,7 +152,7 @@
 				F6451423223F30AF006230DA /* Main.storyboard */,
 				F6451428223F30B0006230DA /* LaunchScreen.storyboard */,
 				F68D30F62251F4F8002700C8 /* Model */,
-				F62A2144228D5E8E00508F2A /* View */,
+				F62A2144228D5E8E00508F2A /* maoergmero */,
 				F68D30F42251F4DA002700C8 /* Controller */,
 				F6F2C2B32253507D00363473 /* Core */,
 				F6F2C2B22253495B00363473 /* Utils */,

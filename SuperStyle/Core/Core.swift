@@ -96,7 +96,6 @@ extension FeatureViewController {
         let model = MosaicModel()
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
-            //this resize here controlls the memory, speed and precision of the transfer
             guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
             guard let cvBufferInput = inputImage.pixelBuffer() else { return }
             guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
