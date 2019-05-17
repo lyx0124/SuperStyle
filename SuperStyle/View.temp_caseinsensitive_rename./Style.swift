@@ -15,22 +15,22 @@ struct Style {
     var description: String
     
     static var styles = [
-        Style(name: "Mosaic",
+        Style(name: "",
                 image: UIImage(named: "mosaic")!,
-                shortDescription: "Mosaic style",
-                description: "Mosaic style"),
-        Style(name: "Candy",
+                shortDescription: "",
+                description: ""),
+        Style(name: "",
                 image: UIImage(named: "candy")!,
-                shortDescription: "Candy style",
-                description: "Candy style"),
-        Style(name: "Rain Princess",
+                shortDescription: "",
+                description: ""),
+        Style(name: "",
                 image: UIImage(named: "rain-princess")!,
-                shortDescription: "Rain Princess style",
-                description: "Rain Princess style"),
-        Style(name: "Udnie",
+                shortDescription: "",
+                description: ""),
+        Style(name: "",
                 image: UIImage(named: "udnie")!,
-                shortDescription: "Udnie style",
-                description: "Udnie style")
+                shortDescription: "",
+                description: "")
     ]
     
     static var portraits = [
@@ -40,43 +40,43 @@ struct Style {
                 description: ""),
         Style(name: "Black",
               image: UIImage(named: "blonde")!,
-              shortDescription: "Black hair",
-              description: "Black hair"),
+              shortDescription: "",
+              description: ""),
         Style(name: "Blonde",
               image: UIImage(named: "blonde")!,
-              shortDescription: "Blonde hair",
-              description: "Blonde hair"),
+              shortDescription: "",
+              description: ""),
         Style(name: "Brown",
                 image: UIImage(named: "blonde")!,
-                shortDescription: "Brown hair",
-                description: "Brown hair"),
+                shortDescription: "",
+                description: ""),
         Style(name: "Male",
                 image: UIImage(named: "male")!,
-                shortDescription: "Male or not",
-                description: "Male or not"),
+                shortDescription: "",
+                description: ""),
         Style(name: "Young",
                 image: UIImage(named: "male")!,
-                shortDescription: "Young or not",
-                description: "Young or not")
+                shortDescription: "",
+                description: "")
     ]
     
     static var domains = [
         Style(name: "Blonde",
               image: UIImage(named: "blonde")!,
-              shortDescription: "Blonde style",
-              description: "Blonde style"),
+              shortDescription: "",
+              description: ""),
         Style(name: "Male",
-              image: UIImage(named: "male")!,
-              shortDescription: "Male style",
-              description: "Male style"),
+              image: UIImage(named: "blonde")!,
+              shortDescription: "",
+              description: ""),
         Style(name: "Female",
-              image: UIImage(named: "female")!,
-              shortDescription: "Female style",
-              description: "Female style"),
+              image: UIImage(named: "male")!,
+              shortDescription: "",
+              description: ""),
         Style(name: "Age",
-              image: UIImage(named: "age")!,
-              shortDescription: "Age style",
-              description: "Age style")
+              image: UIImage(named: "male")!,
+              shortDescription: "",
+              description: "")
     ]
     
 }
