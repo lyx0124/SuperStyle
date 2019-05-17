@@ -467,10 +467,10 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-X4-cg8">
-                                <rect key="frame" x="0.0" y="105" width="375" height="387"/>
+                                <rect key="frame" x="0.0" y="105" width="375" height="388"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHY-dC-yrw">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="387"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="388"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                 </subviews>
@@ -515,11 +515,8 @@
                                 </items>
                             </toolbar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="weA-7r-hdI">
-                                <rect key="frame" x="0.0" y="492" width="375" height="130"/>
+                                <rect key="frame" x="0.0" y="493" width="375" height="129"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="vJV-TE-U0z"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wcx-Yd-Blc">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -528,7 +525,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="dFd-RH-sGu" customClass="StyleCell" customModule="SuperStyle" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="15" width="100" height="100"/>
+                                        <rect key="frame" x="30" y="14.5" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -600,6 +597,7 @@
                             <constraint firstItem="48W-AT-IG0" firstAttribute="bottom" secondItem="JvO-Ee-bBy" secondAttribute="bottom" constant="34" id="hQv-Et-LJj"/>
                             <constraint firstItem="z1Z-X4-cg8" firstAttribute="centerX" secondItem="JvO-Ee-bBy" secondAttribute="centerX" id="lCg-8j-ow9"/>
                             <constraint firstItem="Nvn-Do-cW0" firstAttribute="bottom" secondItem="JvO-Ee-bBy" secondAttribute="bottom" id="o7c-hk-Ngl"/>
+                            <constraint firstItem="z1Z-X4-cg8" firstAttribute="height" secondItem="weA-7r-hdI" secondAttribute="height" multiplier="3" id="qNS-ay-ykv"/>
                             <constraint firstItem="4Ro-i8-91m" firstAttribute="top" secondItem="JvO-Ee-bBy" secondAttribute="top" constant="10" id="tAf-hL-4Xk"/>
                             <constraint firstItem="JvO-Ee-bBy" firstAttribute="top" secondItem="48W-AT-IG0" secondAttribute="top" constant="44" id="ty0-d6-Z61"/>
                             <constraint firstItem="4Ro-i8-91m" firstAttribute="centerX" secondItem="JvO-Ee-bBy" secondAttribute="centerX" id="uQ3-9m-vOH"/>
