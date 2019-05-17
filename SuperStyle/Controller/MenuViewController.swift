@@ -17,6 +17,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.alwaysBounceVertical = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

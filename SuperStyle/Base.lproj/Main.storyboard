@@ -73,30 +73,30 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="61T-zt-SmO">
                                 <rect key="frame" x="0.0" y="-24" width="375" height="725"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="UtU-qj-iT1">
-                                    <size key="itemSize" width="375" height="200"/>
+                                    <size key="itemSize" width="375" height="250"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="item" id="AXR-ZS-eIj" customClass="SectionCell" customModule="SuperStyle" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZWP-80-BOq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtV-AO-QWZ">
-                                                    <rect key="frame" x="24" y="124" width="122" height="24"/>
+                                                    <rect key="frame" x="24" y="174" width="122" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkP-oN-AXf">
-                                                    <rect key="frame" x="24" y="157" width="256" height="15"/>
+                                                    <rect key="frame" x="24" y="207" width="256" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.97638529539999996" green="0.97652524709999999" blue="0.97635465860000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -110,9 +110,9 @@
                                             <constraint firstItem="ZWP-80-BOq" firstAttribute="leading" secondItem="AXR-ZS-eIj" secondAttribute="leading" id="Ric-us-XrR"/>
                                             <constraint firstItem="OkP-oN-AXf" firstAttribute="leading" secondItem="AXR-ZS-eIj" secondAttribute="leading" constant="24" id="S6p-Bl-OYG"/>
                                             <constraint firstAttribute="trailing" secondItem="OkP-oN-AXf" secondAttribute="trailing" constant="95" id="UoS-tE-r9b"/>
-                                            <constraint firstAttribute="bottom" secondItem="ZWP-80-BOq" secondAttribute="bottom" id="Z8Y-cq-BiV"/>
                                             <constraint firstAttribute="trailing" secondItem="ZWP-80-BOq" secondAttribute="trailing" id="eTD-UT-Ybb"/>
                                             <constraint firstItem="ZWP-80-BOq" firstAttribute="top" secondItem="AXR-ZS-eIj" secondAttribute="top" id="g1u-26-OqI"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZWP-80-BOq" secondAttribute="bottom" id="l2K-dD-qnL"/>
                                             <constraint firstItem="jtV-AO-QWZ" firstAttribute="leading" secondItem="AXR-ZS-eIj" secondAttribute="leading" constant="24" id="sPc-Wk-fXx"/>
                                         </constraints>
                                         <connections>
@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WwB-Zb-TK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2666.666666666667" y="787.5"/>
+            <point key="canvasLocation" x="2666.4000000000001" y="786.65667166416802"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="VoF-fJ-SBB">
@@ -620,6 +620,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="X9k-cA-uac"/>
-        <segue reference="8FY-ZZ-SkE"/>
+        <segue reference="YTg-FI-5Nq"/>
     </inferredMetricsTieBreakers>
 </document>
