@@ -18,19 +18,19 @@
 		F6756F9D226EB2660011873A /* CandyModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F99226EB2660011873A /* CandyModel.mlmodel */; };
 		F6756F9E226EB2660011873A /* RainPrincessModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */; };
 		F6756F9F226EB2660011873A /* UdnieModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F9B226EB2660011873A /* UdnieModel.mlmodel */; };
+		F67E2F6B228E3EE500C5CCDE /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E2F65228E3EE400C5CCDE /* Feature.swift */; };
+		F67E2F6C228E3EE500C5CCDE /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E2F66228E3EE400C5CCDE /* FeatureCell.swift */; };
+		F67E2F6D228E3EE500C5CCDE /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E2F67228E3EE400C5CCDE /* Style.swift */; };
+		F67E2F6E228E3EE500C5CCDE /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E2F68228E3EE400C5CCDE /* SectionCell.swift */; };
+		F67E2F6F228E3EE500C5CCDE /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E2F69228E3EE400C5CCDE /* Section.swift */; };
+		F67E2F70228E3EE500C5CCDE /* StyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E2F6A228E3EE500C5CCDE /* StyleCell.swift */; };
 		F687A6E1224A3D0800E98824 /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687A6E0224A3D0800E98824 /* FeatureViewController.swift */; };
-		F687A6E3224A3E9C00E98824 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687A6E2224A3E9C00E98824 /* Feature.swift */; };
-		F687A6E5224A3EA400E98824 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687A6E4224A3EA400E98824 /* FeatureCell.swift */; };
 		F68B08602254719E00AE3C5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F68B085F2254719E00AE3C5B /* README.md */; };
-		F68D31042251FC5C002700C8 /* StyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D31032251FC5C002700C8 /* StyleCell.swift */; };
-		F68D310622520271002700C8 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68D310522520271002700C8 /* Style.swift */; };
 		F6AFBFD022543F85007468BA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFCF22543F85007468BA /* Utils.swift */; };
 		F6AFBFD2225457BA007468BA /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */; };
 		F6AFBFD4225457D7007468BA /* UIImage+CoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */; };
 		F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA3DD3224202760035C326 /* MenuViewController.swift */; };
 		F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E02248A483001DC8D1 /* IntroViewController.swift */; };
-		F6EA78E32248AE2F001DC8D1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E22248AE2F001DC8D1 /* Section.swift */; };
-		F6EA78E52248AE3F001DC8D1 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */; };
 		F6EA78E72248B0E2001DC8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EA78E62248B0E2001DC8D1 /* Assets.xcassets */; };
 		F6F2C2B52253509C00363473 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2C2B42253509C00363473 /* Core.swift */; };
 /* End PBXBuildFile section */
@@ -64,19 +64,19 @@
 		F6756F99226EB2660011873A /* CandyModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CandyModel.mlmodel; sourceTree = "<group>"; };
 		F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RainPrincessModel.mlmodel; sourceTree = "<group>"; };
 		F6756F9B226EB2660011873A /* UdnieModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = UdnieModel.mlmodel; sourceTree = "<group>"; };
+		F67E2F65228E3EE400C5CCDE /* Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		F67E2F66228E3EE400C5CCDE /* FeatureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		F67E2F67228E3EE400C5CCDE /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		F67E2F68228E3EE400C5CCDE /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		F67E2F69228E3EE400C5CCDE /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		F67E2F6A228E3EE500C5CCDE /* StyleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleCell.swift; sourceTree = "<group>"; };
 		F687A6E0224A3D0800E98824 /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
-		F687A6E2224A3E9C00E98824 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
-		F687A6E4224A3EA400E98824 /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
 		F68B085F2254719E00AE3C5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		F68D31032251FC5C002700C8 /* StyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCell.swift; sourceTree = "<group>"; };
-		F68D310522520271002700C8 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		F6AFBFCF22543F85007468BA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreML.swift"; sourceTree = "<group>"; };
 		F6DA3DD3224202760035C326 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F6EA78E02248A483001DC8D1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		F6EA78E22248AE2F001DC8D1 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		F6EA78E62248B0E2001DC8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		F6F2C2B42253509C00363473 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,20 +110,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F62A2144228D5E8E00508F2A /* maoergmero */ = {
-			isa = PBXGroup;
-			children = (
-				F6EA78E22248AE2F001DC8D1 /* Section.swift */,
-				F6EA78E42248AE3F001DC8D1 /* SectionCell.swift */,
-				F687A6E2224A3E9C00E98824 /* Feature.swift */,
-				F687A6E4224A3EA400E98824 /* FeatureCell.swift */,
-				F68D310522520271002700C8 /* Style.swift */,
-				F68D31032251FC5C002700C8 /* StyleCell.swift */,
-			);
-			name = maoergmero;
-			path = View.temp_caseinsensitive_rename.;
-			sourceTree = "<group>";
-		};
 		F6451413223F30AF006230DA = {
 			isa = PBXGroup;
 			children = (
@@ -152,12 +138,25 @@
 				F6451423223F30AF006230DA /* Main.storyboard */,
 				F6451428223F30B0006230DA /* LaunchScreen.storyboard */,
 				F68D30F62251F4F8002700C8 /* Model */,
-				F62A2144228D5E8E00508F2A /* maoergmero */,
 				F68D30F42251F4DA002700C8 /* Controller */,
+				F67E2F71228E3EEB00C5CCDE /* View */,
 				F6F2C2B32253507D00363473 /* Core */,
 				F6F2C2B22253495B00363473 /* Utils */,
 			);
 			path = SuperStyle;
+			sourceTree = "<group>";
+		};
+		F67E2F71228E3EEB00C5CCDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F67E2F65228E3EE400C5CCDE /* Feature.swift */,
+				F67E2F66228E3EE400C5CCDE /* FeatureCell.swift */,
+				F67E2F69228E3EE400C5CCDE /* Section.swift */,
+				F67E2F68228E3EE400C5CCDE /* SectionCell.swift */,
+				F67E2F67228E3EE400C5CCDE /* Style.swift */,
+				F67E2F6A228E3EE500C5CCDE /* StyleCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F68D30F42251F4DA002700C8 /* Controller */ = {
@@ -328,22 +327,22 @@
 				F6AFBFD4225457D7007468BA /* UIImage+CoreML.swift in Sources */,
 				F6756F9C226EB2660011873A /* MosaicModel.mlmodel in Sources */,
 				F6451422223F30AF006230DA /* SuperStyleViewController.swift in Sources */,
-				F6EA78E32248AE2F001DC8D1 /* Section.swift in Sources */,
-				F6EA78E52248AE3F001DC8D1 /* SectionCell.swift in Sources */,
 				F687A6E1224A3D0800E98824 /* FeatureViewController.swift in Sources */,
-				F68D310622520271002700C8 /* Style.swift in Sources */,
 				F6756F9E226EB2660011873A /* RainPrincessModel.mlmodel in Sources */,
+				F67E2F6F228E3EE500C5CCDE /* Section.swift in Sources */,
 				F61F3D51224A003300B4B5A2 /* SelectViewController.swift in Sources */,
 				F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */,
-				F687A6E3224A3E9C00E98824 /* Feature.swift in Sources */,
+				F67E2F6C228E3EE500C5CCDE /* FeatureCell.swift in Sources */,
+				F67E2F6E228E3EE500C5CCDE /* SectionCell.swift in Sources */,
 				F6451420223F30AF006230DA /* AppDelegate.swift in Sources */,
 				F6AFBFD022543F85007468BA /* Utils.swift in Sources */,
-				F687A6E5224A3EA400E98824 /* FeatureCell.swift in Sources */,
 				F6F2C2B52253509C00363473 /* Core.swift in Sources */,
 				F6756F9D226EB2660011873A /* CandyModel.mlmodel in Sources */,
+				F67E2F6B228E3EE500C5CCDE /* Feature.swift in Sources */,
+				F67E2F6D228E3EE500C5CCDE /* Style.swift in Sources */,
 				F6AFBFD2225457BA007468BA /* UIImage+Resize.swift in Sources */,
 				F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */,
-				F68D31042251FC5C002700C8 /* StyleCell.swift in Sources */,
+				F67E2F70228E3EE500C5CCDE /* StyleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
