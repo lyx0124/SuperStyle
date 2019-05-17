@@ -115,11 +115,6 @@ extension FeatureViewController: UIImagePickerControllerDelegate, UINavigationCo
     //MARK: image picker setup
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.originalImage] as! UIImage
-        if image.size.width > image.size.height {
-            photo.contentMode = UIView.ContentMode.scaleAspectFill
-        } else {
-            photo.contentMode = UIView.ContentMode.scaleAspectFit
-        }
         photo.image = image
         url = saveImage(image: image)
         picker.dismiss(animated: true, completion: nil)
