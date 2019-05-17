@@ -12,26 +12,31 @@ import UIKit
 extension UIImage {
     
     // Resizeing using CoreGraphics
-    func resize(to size:CGSize) -> UIImage? {
+    func resize(to targetSize: CGSize) -> UIImage? {
+        let size = self.size
         
-        let cgImage = self.cgImage!
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
         
-        let destWidth = Int(size.width)
-        let destHeight = Int(size.height)
-        let bitsPerComponent = 8
-        let bytesPerPixel = cgImage.bitsPerPixel / bitsPerComponent
-        let destBytesPerRow = destWidth * bytesPerPixel
+        // Figure out what our orientation is, and use that to form the rectangle
+        var newSize: CGSize
+        if(widthRatio > heightRatio) {
+            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+        } else {
+            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+        }
         
-        let context = CGContext(data: nil,
-                                width: destWidth,
-                                height: destHeight,
-                                bitsPerComponent: bitsPerComponent,
-                                bytesPerRow: destBytesPerRow,
-                                space: cgImage.colorSpace!,
-                                bitmapInfo: cgImage.bitmapInfo.rawValue)!
-        context.interpolationQuality = .high
-        context.draw(cgImage, in: CGRect(origin: CGPoint.zero, size: size))
-        return context.makeImage().flatMap { UIImage(cgImage: $0) }
+        // This is the rect that we've calculated out and this is what is actually used below
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        
+        // Actually do the resizing to the rect using the ImageContext stuff
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        self.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
     }
+    
 }
 
