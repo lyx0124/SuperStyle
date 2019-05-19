@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		B7136CC5C34A7DF426B526C3 /* Pods_SuperStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D92EC385077A0C5B56F6E8 /* Pods_SuperStyle.framework */; };
 		F61F3D51224A003300B4B5A2 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61F3D50224A003300B4B5A2 /* SelectViewController.swift */; };
-		F62A2143228D38E700508F2A /* Generator.mlmodel in CopyFiles */ = {isa = PBXBuildFile; fileRef = F62A2142228D38E600508F2A /* Generator.mlmodel */; };
 		F6451420223F30AF006230DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F645141F223F30AF006230DA /* AppDelegate.swift */; };
 		F6451422223F30AF006230DA /* SuperStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6451421223F30AF006230DA /* SuperStyleViewController.swift */; };
 		F6451425223F30AF006230DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451423223F30AF006230DA /* Main.storyboard */; };
 		F645142A223F30B0006230DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451428223F30B0006230DA /* LaunchScreen.storyboard */; };
+		F6569C9D2291532600CEDD53 /* Muse.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6569C9C2291532600CEDD53 /* Muse.mlmodel */; };
 		F6756F9C226EB2660011873A /* MosaicModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F98226EB2660011873A /* MosaicModel.mlmodel */; };
 		F6756F9D226EB2660011873A /* CandyModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F99226EB2660011873A /* CandyModel.mlmodel */; };
 		F6756F9E226EB2660011873A /* RainPrincessModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */; };
@@ -29,10 +29,13 @@
 		F6AFBFD022543F85007468BA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFCF22543F85007468BA /* Utils.swift */; };
 		F6AFBFD2225457BA007468BA /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */; };
 		F6AFBFD4225457D7007468BA /* UIImage+CoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */; };
+		F6D8D258228FDE2700196CAA /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8D257228FDE2700196CAA /* Tile.swift */; };
 		F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DA3DD3224202760035C326 /* MenuViewController.swift */; };
 		F6EA78E12248A483001DC8D1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA78E02248A483001DC8D1 /* IntroViewController.swift */; };
 		F6EA78E72248B0E2001DC8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EA78E62248B0E2001DC8D1 /* Assets.xcassets */; };
 		F6F2C2B52253509C00363473 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F2C2B42253509C00363473 /* Core.swift */; };
+		F6F701FC228FE8F1002EFFD9 /* Generator.mlmodel in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6F701FB228FE8F1002EFFD9 /* Generator.mlmodel */; };
+		F6F701FE229030D9002EFFD9 /* StarGANInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F701FD229030D9002EFFD9 /* StarGANInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				F62A2143228D38E700508F2A /* Generator.mlmodel in CopyFiles */,
+				F6F701FC228FE8F1002EFFD9 /* Generator.mlmodel in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,13 +56,13 @@
 		E2539D091C5AA3FEF4655B75 /* Pods-SuperStyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperStyle.debug.xcconfig"; path = "Target Support Files/Pods-SuperStyle/Pods-SuperStyle.debug.xcconfig"; sourceTree = "<group>"; };
 		EC9D7BCF3FA33FCC7A30CE8F /* Pods-SuperStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperStyle.release.xcconfig"; path = "Target Support Files/Pods-SuperStyle/Pods-SuperStyle.release.xcconfig"; sourceTree = "<group>"; };
 		F61F3D50224A003300B4B5A2 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
-		F62A2142228D38E600508F2A /* Generator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Generator.mlmodel; sourceTree = "<group>"; };
 		F645141C223F30AF006230DA /* SuperStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F645141F223F30AF006230DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6451421223F30AF006230DA /* SuperStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperStyleViewController.swift; sourceTree = "<group>"; };
 		F6451424223F30AF006230DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6451429223F30B0006230DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F645142B223F30B0006230DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6569C9C2291532600CEDD53 /* Muse.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Muse.mlmodel; sourceTree = "<group>"; };
 		F6756F98226EB2660011873A /* MosaicModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MosaicModel.mlmodel; sourceTree = "<group>"; };
 		F6756F99226EB2660011873A /* CandyModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CandyModel.mlmodel; sourceTree = "<group>"; };
 		F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RainPrincessModel.mlmodel; sourceTree = "<group>"; };
@@ -75,10 +78,13 @@
 		F6AFBFCF22543F85007468BA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CoreML.swift"; sourceTree = "<group>"; };
+		F6D8D257228FDE2700196CAA /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		F6DA3DD3224202760035C326 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F6EA78E02248A483001DC8D1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		F6EA78E62248B0E2001DC8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		F6F2C2B42253509C00363473 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		F6F701FB228FE8F1002EFFD9 /* Generator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Generator.mlmodel; sourceTree = "<group>"; };
+		F6F701FD229030D9002EFFD9 /* StarGANInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarGANInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +180,8 @@
 		F68D30F62251F4F8002700C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F62A2142228D38E600508F2A /* Generator.mlmodel */,
+				F6569C9C2291532600CEDD53 /* Muse.mlmodel */,
+				F6F701FB228FE8F1002EFFD9 /* Generator.mlmodel */,
 				F6756F99226EB2660011873A /* CandyModel.mlmodel */,
 				F6756F98226EB2660011873A /* MosaicModel.mlmodel */,
 				F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */,
@@ -189,6 +196,8 @@
 				F6AFBFD1225457BA007468BA /* UIImage+Resize.swift */,
 				F6AFBFD3225457D7007468BA /* UIImage+CoreML.swift */,
 				F6AFBFCF22543F85007468BA /* Utils.swift */,
+				F6D8D257228FDE2700196CAA /* Tile.swift */,
+				F6F701FD229030D9002EFFD9 /* StarGANInput.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -328,13 +337,16 @@
 				F6756F9C226EB2660011873A /* MosaicModel.mlmodel in Sources */,
 				F6451422223F30AF006230DA /* SuperStyleViewController.swift in Sources */,
 				F687A6E1224A3D0800E98824 /* FeatureViewController.swift in Sources */,
+				F6569C9D2291532600CEDD53 /* Muse.mlmodel in Sources */,
 				F6756F9E226EB2660011873A /* RainPrincessModel.mlmodel in Sources */,
 				F67E2F6F228E3EE500C5CCDE /* Section.swift in Sources */,
 				F61F3D51224A003300B4B5A2 /* SelectViewController.swift in Sources */,
 				F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */,
+				F6D8D258228FDE2700196CAA /* Tile.swift in Sources */,
 				F67E2F6C228E3EE500C5CCDE /* FeatureCell.swift in Sources */,
 				F67E2F6E228E3EE500C5CCDE /* SectionCell.swift in Sources */,
 				F6451420223F30AF006230DA /* AppDelegate.swift in Sources */,
+				F6F701FE229030D9002EFFD9 /* StarGANInput.swift in Sources */,
 				F6AFBFD022543F85007468BA /* Utils.swift in Sources */,
 				F6F2C2B52253509C00363473 /* Core.swift in Sources */,
 				F6756F9D226EB2660011873A /* CandyModel.mlmodel in Sources */,

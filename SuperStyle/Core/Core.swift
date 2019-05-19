@@ -9,37 +9,6 @@
 import UIKit
 import CoreML
 
-class StarGANInput : MLFeatureProvider {
-    
-    // Input image in the format of CVPixelBuffer
-    var _0: CVPixelBuffer
-    var _1: MLMultiArray
-    
-    // Input feature name
-    var featureNames: Set<String> {
-        get {
-            return ["_0", "_1"]
-        }
-    }
-    
-    // Value for a certain input feature.
-    func featureValue(for featureName: String) -> MLFeatureValue? {
-        if (featureName == "_0") {
-            return MLFeatureValue(pixelBuffer: _0)
-        }
-        if (featureName == "_1") {
-            return MLFeatureValue(multiArray: _1)
-        }
-        return nil
-    }
-    
-    init(_0: CVPixelBuffer, _1: MLMultiArray) {
-        self._0 = _0
-        self._1 = _1
-    }
-    
-}
-
 extension FeatureViewController {
     
     func applyStyle(input: UIImage, style: Int) {
@@ -53,6 +22,8 @@ extension FeatureViewController {
                 applyRainPrincess(input: input)
             case 3:
                 applyUdnie(input: input)
+            case 4:
+                applyMuse(input: input)
             default:
                 showAlertWithMessage(message: "Error!")
             }
@@ -60,8 +31,8 @@ extension FeatureViewController {
         else if featureNumber == 1 { //from portraits cell
             switch style {
             case 0:
-                //applyStarGAN(input: input)
-                showAlertWithMessage(message: "To be developed.")
+                applyStarGAN(input: input)
+                //showAlertWithMessage(message: "To be developed.")
             case 1:
                 showAlertWithMessage(message: "To be developed.")
             case 2:
@@ -142,6 +113,22 @@ extension FeatureViewController {
     
     func applyUdnie(input: UIImage) {
         let model = UdnieModel()
+        DispatchQueue.global().async {
+            self.showWaitingAlert(message: "Applying style...")
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func applyMuse(input: UIImage) {
+        let model = Muse()
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
             guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }

@@ -30,7 +30,27 @@ struct Style {
         Style(name: "",
                 image: UIImage(named: "udnie")!,
                 shortDescription: "",
-                description: "")
+                description: ""),
+        Style(name: "",
+              image: UIImage(named: "muse")!,
+              shortDescription: "",
+              description: ""),
+        Style(name: "",
+              image: UIImage(named: "starry")!,
+              shortDescription: "",
+              description: ""),
+        Style(name: "",
+              image: UIImage(named: "sketch")!,
+              shortDescription: "",
+              description: ""),
+        Style(name: "",
+              image: UIImage(named: "wave")!,
+              shortDescription: "",
+              description: ""),
+        Style(name: "",
+              image: UIImage(named: "scream")!,
+              shortDescription: "",
+              description: "")
     ]
     
     static var portraits = [
