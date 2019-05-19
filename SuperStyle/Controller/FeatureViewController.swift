@@ -16,7 +16,9 @@ class FeatureViewController: UIViewController, UIScrollViewDelegate {
     var featureNumber: Int?
     var url: URL?
     var styleApplied = false //record whether style transfer is used
-    var label = try! MLMultiArray(shape: [5], dataType: MLMultiArrayDataType.float32) // stargan label
+    //var label = try! MLMultiArray(shape: [5], dataType: MLMultiArrayDataType.float32) // stargan label
+    var label = [0, 0, 0, 0, 0]
+    var selected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] //record whether collectionview item is selected
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: UIImageView!
@@ -31,10 +33,10 @@ class FeatureViewController: UIViewController, UIScrollViewDelegate {
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 10.0
         
-        //initialize label for stargan
-        for i in 1...5 {
-            label[i] = 0
-        }
+//        //initialize label for stargan
+//        for i in 1...5 {
+//            label[i] = 0
+//        }
         
         if let feature = feature {
             let name = feature.name
@@ -161,14 +163,53 @@ extension FeatureViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if photo.image != nil{
-            if let image = getImageFromURL(url: url) {
-                applyStyle(input: image, style: indexPath.item)
-                styleApplied = true
+        let cell = collectionView.cellForItem(at: indexPath)
+        if featureNumber == 1 || featureNumber == 2 {
+            if selected[indexPath.item] == 0 {
+                cell?.layer.borderWidth = 3.0
+                cell?.layer.borderColor = UIColor.gray.cgColor
+                selected[indexPath.item] = 1
+            }
+            else {
+                cell?.layer.borderWidth = 0.0
+                selected[indexPath.item] = 0
+            }
+            if photo.image != nil{
+                if let image = getImageFromURL(url: url) {
+                    applyStyle(input: image, style: indexPath.item)
+                    styleApplied = true
+                }
+            }
+            else{
+                showAlertWithMessage(message: "Please take or choose a photo first.")
+                cell?.layer.borderWidth = 0.0
+                selected[indexPath.item] = 0
             }
         }
-        else{
-            showAlertWithMessage(message: "Please take or choose a photo first.")
+        else if featureNumber == 0 {
+            if selected[indexPath.item] == 0 {
+                cell?.layer.borderWidth = 3.0
+                cell?.layer.borderColor = UIColor.gray.cgColor
+                for i in 0...(Style.styles.count-1) {
+                    if i != indexPath.item {
+                        let cell = collectionView.cellForItem(at: IndexPath(item: i, section: 0))
+                        cell?.layer.borderWidth = 0.0
+                        selected[i] = 0
+                    }
+                }
+                selected[indexPath.item] = 1
+            }
+            if photo.image != nil{
+                if let image = getImageFromURL(url: url) {
+                    applyStyle(input: image, style: indexPath.item)
+                    styleApplied = true
+                }
+            }
+            else{
+                showAlertWithMessage(message: "Please take or choose a photo first.")
+                cell?.layer.borderWidth = 0.0
+                selected[indexPath.item] = 0
+            }
         }
     }
     
