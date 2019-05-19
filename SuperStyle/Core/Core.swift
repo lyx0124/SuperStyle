@@ -144,23 +144,24 @@ extension FeatureViewController {
     }
     
     func applyStarGAN(input: UIImage) {
-        let modelUrl = Bundle.main.url(forResource: "Generator", withExtension: "mlmodel")
-        guard let compiledUrl = try? MLModel.compileModel(at: modelUrl!) else { return }
-        guard let model = try? MLModel(contentsOf: compiledUrl) else { return }
-        DispatchQueue.global().async {
-            self.showWaitingAlert(message: "Applying style...")
-            guard let inputImage = input.resize(to: CGSize(width: 256, height: 256)) else { return }
-            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
-            //guard let output = try? model.prediction(_0: cvBufferInput, _1: self.label) else { return }
-            guard let output = try? model.prediction(from: StarGANInput(_0: cvBufferInput, _1: self.label)) else {return}
-            let outputFeature = output.featureValue(for: "_186")
-            guard let outputImage = UIImage(pixelBuffer: outputFeature as! CVPixelBuffer) else { return }
-            guard let finalImage = outputImage.resize(to: input.size) else { return }
-            DispatchQueue.main.async {
-                self.photo.image = finalImage
-            }
-            self.dismiss(animated: true, completion: nil)
-        }
+//        let modelUrl = Bundle.main.url(forResource: "Generator", withExtension: "mlmodel")
+//        guard let compiledUrl = try? MLModel.compileModel(at: modelUrl!) else { return }
+//        guard let model = try? MLModel(contentsOf: compiledUrl) else { return }
+//        DispatchQueue.global().async {
+//            self.showWaitingAlert(message: "Applying style...")
+//            guard let inputImage = input.resize(to: CGSize(width: 256, height: 256)) else { return }
+//            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+//            //guard let output = try? model.prediction(_0: cvBufferInput, _1: self.label) else { return }
+//            guard let output = try? model.prediction(from: StarGANInput(_0: cvBufferInput, _1: self.label)) else {return}
+//            let outputFeature = output.featureValue(for: "_186")
+//            guard let outputImage = UIImage(pixelBuffer: outputFeature as! CVPixelBuffer) else { return }
+//            guard let finalImage = outputImage.resize(to: input.size) else { return }
+//            DispatchQueue.main.async {
+//                self.photo.image = finalImage
+//            }
+//            self.dismiss(animated: true, completion: nil)
+//        }
+        print("StarGAN")
     }
     
 }
