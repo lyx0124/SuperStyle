@@ -16,8 +16,8 @@ class FeatureViewController: UIViewController, UIScrollViewDelegate {
     var featureNumber: Int?
     var url: URL?
     var styleApplied = false //record whether style transfer is used
-    //var label = try! MLMultiArray(shape: [5], dataType: MLMultiArrayDataType.float32) // stargan label
-    var label = [0, 0, 0, 0, 0]
+    var label = try! MLMultiArray(shape: [5, 256, 256], dataType: MLMultiArrayDataType.float32) // stargan label
+    //var label = [0, 0, 0, 0, 0]
     var selected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] //record whether collectionview item is selected
     
     @IBOutlet weak var collectionView: UICollectionView!
