@@ -24,6 +24,14 @@ extension FeatureViewController {
                 applyUdnie(input: input)
             case 4:
                 applyMuse(input: input)
+            case 5:
+                applyStarry(input: input)
+            case 6:
+                applySketch(input: input)
+            case 7:
+                applyWave(input: input)
+            case 8:
+                applyScream(input: input)
             default:
                 showAlertWithMessage(message: "Error!")
             }
@@ -129,6 +137,70 @@ extension FeatureViewController {
     
     func applyMuse(input: UIImage) {
         let model = Muse()
+        DispatchQueue.global().async {
+            self.showWaitingAlert(message: "Applying style...")
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func applyStarry(input: UIImage) {
+        let model = Starry()
+        DispatchQueue.global().async {
+            self.showWaitingAlert(message: "Applying style...")
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+
+    func applySketch(input: UIImage) {
+        let model = Sketch()
+        DispatchQueue.global().async {
+            self.showWaitingAlert(message: "Applying style...")
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+
+    func applyWave(input: UIImage) {
+        let model = Wave()
+        DispatchQueue.global().async {
+            self.showWaitingAlert(message: "Applying style...")
+            guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }
+            guard let cvBufferInput = inputImage.pixelBuffer() else { return }
+            guard let output = try? model.prediction(input_1: cvBufferInput) else { return }
+            guard let outputImage = UIImage(pixelBuffer: output._128) else { return }
+            guard let finalImage = outputImage.resize(to: input.size) else { return }
+            DispatchQueue.main.async {
+                self.photo.image = finalImage
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+
+    func applyScream(input: UIImage) {
+        let model = Scream()
         DispatchQueue.global().async {
             self.showWaitingAlert(message: "Applying style...")
             guard let inputImage = input.resize(to: CGSize(width: 512, height: 512)) else { return }

@@ -14,6 +14,10 @@
 		F6451425223F30AF006230DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451423223F30AF006230DA /* Main.storyboard */; };
 		F645142A223F30B0006230DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6451428223F30B0006230DA /* LaunchScreen.storyboard */; };
 		F6569C9D2291532600CEDD53 /* Muse.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6569C9C2291532600CEDD53 /* Muse.mlmodel */; };
+		F656C770229231B600C05B8C /* Starry.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F656C76C229231B500C05B8C /* Starry.mlmodel */; };
+		F656C771229231B600C05B8C /* Sketch.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F656C76D229231B500C05B8C /* Sketch.mlmodel */; };
+		F656C772229231B600C05B8C /* Wave.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F656C76E229231B600C05B8C /* Wave.mlmodel */; };
+		F656C773229231B600C05B8C /* Scream.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F656C76F229231B600C05B8C /* Scream.mlmodel */; };
 		F6756F9C226EB2660011873A /* MosaicModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F98226EB2660011873A /* MosaicModel.mlmodel */; };
 		F6756F9D226EB2660011873A /* CandyModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F99226EB2660011873A /* CandyModel.mlmodel */; };
 		F6756F9E226EB2660011873A /* RainPrincessModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */; };
@@ -60,6 +64,10 @@
 		F6451429223F30B0006230DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F645142B223F30B0006230DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6569C9C2291532600CEDD53 /* Muse.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Muse.mlmodel; sourceTree = "<group>"; };
+		F656C76C229231B500C05B8C /* Starry.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Starry.mlmodel; sourceTree = "<group>"; };
+		F656C76D229231B500C05B8C /* Sketch.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Sketch.mlmodel; sourceTree = "<group>"; };
+		F656C76E229231B600C05B8C /* Wave.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Wave.mlmodel; sourceTree = "<group>"; };
+		F656C76F229231B600C05B8C /* Scream.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Scream.mlmodel; sourceTree = "<group>"; };
 		F6756F98226EB2660011873A /* MosaicModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MosaicModel.mlmodel; sourceTree = "<group>"; };
 		F6756F99226EB2660011873A /* CandyModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CandyModel.mlmodel; sourceTree = "<group>"; };
 		F6756F9A226EB2660011873A /* RainPrincessModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RainPrincessModel.mlmodel; sourceTree = "<group>"; };
@@ -175,6 +183,10 @@
 		F68D30F62251F4F8002700C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F656C76F229231B600C05B8C /* Scream.mlmodel */,
+				F656C76D229231B500C05B8C /* Sketch.mlmodel */,
+				F656C76C229231B500C05B8C /* Starry.mlmodel */,
+				F656C76E229231B600C05B8C /* Wave.mlmodel */,
 				F6D63E8D22919873004855EC /* Generator.mlmodel */,
 				F6569C9C2291532600CEDD53 /* Muse.mlmodel */,
 				F6756F99226EB2660011873A /* CandyModel.mlmodel */,
@@ -331,15 +343,19 @@
 				F6451422223F30AF006230DA /* SuperStyleViewController.swift in Sources */,
 				F687A6E1224A3D0800E98824 /* FeatureViewController.swift in Sources */,
 				F6569C9D2291532600CEDD53 /* Muse.mlmodel in Sources */,
+				F656C770229231B600C05B8C /* Starry.mlmodel in Sources */,
 				F6756F9E226EB2660011873A /* RainPrincessModel.mlmodel in Sources */,
 				F67E2F6F228E3EE500C5CCDE /* Section.swift in Sources */,
 				F61F3D51224A003300B4B5A2 /* SelectViewController.swift in Sources */,
 				F6DA3DD4224202760035C326 /* MenuViewController.swift in Sources */,
+				F656C773229231B600C05B8C /* Scream.mlmodel in Sources */,
 				F6D63E8E22919874004855EC /* Generator.mlmodel in Sources */,
+				F656C772229231B600C05B8C /* Wave.mlmodel in Sources */,
 				F67E2F6C228E3EE500C5CCDE /* FeatureCell.swift in Sources */,
 				F67E2F6E228E3EE500C5CCDE /* SectionCell.swift in Sources */,
 				F6451420223F30AF006230DA /* AppDelegate.swift in Sources */,
 				F6AFBFD022543F85007468BA /* Utils.swift in Sources */,
+				F656C771229231B600C05B8C /* Sketch.mlmodel in Sources */,
 				F6F2C2B52253509C00363473 /* Core.swift in Sources */,
 				F6756F9D226EB2660011873A /* CandyModel.mlmodel in Sources */,
 				F67E2F6B228E3EE500C5CCDE /* Feature.swift in Sources */,
